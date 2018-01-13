@@ -1,0 +1,31 @@
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[STP_InsereLogAcao]
+    @nCDA_LOG_ACAO int OUTPUT,
+	@CEA_EMP_CADASTRO int,
+	@CEA_USUARIO int,
+	@CEA_TURMA int,
+	@CEA_TIPO_ACAO int
+As  
+BEGIN   
+
+SET NOCOUNT ON
+
+INSERT INTO [TBL_LOG_ACAO]
+           ([CEA_EMP_CADASTRO]
+           ,[CEA_TURMA]
+           ,[CEA_USUARIO]
+           ,[CEA_TIPO_ACAO])
+     VALUES
+           (@CEA_EMP_CADASTRO
+           ,@CEA_TURMA
+           ,@CEA_USUARIO
+           ,@CEA_TIPO_ACAO)
+
+	SET @nCDA_LOG_ACAO = @@IDENTITY;
+
+RETURN
+END

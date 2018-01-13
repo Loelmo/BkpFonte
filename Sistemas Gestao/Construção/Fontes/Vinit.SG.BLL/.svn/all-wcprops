@@ -1,0 +1,347 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/FNQ.SG/!svn/ver/246/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL
+END
+BllQuestionario.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/FNQ.SG/!svn/ver/163/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllQuestionario.cs
+END
+BllQuestionarioEmpresaAvaliador.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FNQ.SG/!svn/ver/178/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllQuestionarioEmpresaAvaliador.cs
+END
+BllFaturamento.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllFaturamento.cs
+END
+BllNoticia.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllNoticia.cs
+END
+app.config
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/app.config
+END
+BllAdmFuncionalidade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllAdmFuncionalidade.cs
+END
+BllTipoEmpresa.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/FNQ.SG/!svn/ver/137/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllTipoEmpresa.cs
+END
+BllAdmGrupoRelUsuario.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/FNQ.SG/!svn/ver/184/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllAdmGrupoRelUsuario.cs
+END
+BllEtapa.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/FNQ.SG/!svn/ver/72/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllEtapa.cs
+END
+BllAtendimentoSistema.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllAtendimentoSistema.cs
+END
+BllQuestionarioEmpresa.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FNQ.SG/!svn/ver/178/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllQuestionarioEmpresa.cs
+END
+BllRelatorio.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/FNQ.SG/!svn/ver/207/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllRelatorio.cs
+END
+BllAdmUsuarioRelGrupoUsuario.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllAdmUsuarioRelGrupoUsuario.cs
+END
+BllEscritorioRegional.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FNQ.SG/!svn/ver/63/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllEscritorioRegional.cs
+END
+BllAtendimentoTipo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllAtendimentoTipo.cs
+END
+BllContatoFaixaEtaria.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllContatoFaixaEtaria.cs
+END
+BllPerguntaResposta.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FNQ.SG/!svn/ver/72/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllPerguntaResposta.cs
+END
+BllAdmUsuario.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FNQ.SG/!svn/ver/167/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllAdmUsuario.cs
+END
+BllCidade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FNQ.SG/!svn/ver/26/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllCidade.cs
+END
+BllAtendimentoStatus.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllAtendimentoStatus.cs
+END
+BllTurmaEmpresaArquivo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllTurmaEmpresaArquivo.cs
+END
+BllQuestionarioEmpresaCalculoPontuacao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/FNQ.SG/!svn/ver/178/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllQuestionarioEmpresaCalculoPontuacao.cs
+END
+BllIntegracaoSiac.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/FNQ.SG/!svn/ver/166/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllIntegracaoSiac.cs
+END
+BllBairro.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllBairro.cs
+END
+BllAuxiliar.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllAuxiliar.cs
+END
+BllCriterio.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllCriterio.cs
+END
+BllProgramaEmpresa.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllProgramaEmpresa.cs
+END
+BllPergunta.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/FNQ.SG/!svn/ver/194/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllPergunta.cs
+END
+BllEtapaResumo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FNQ.SG/!svn/ver/24/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllEtapaResumo.cs
+END
+BllTipoEtapa.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllTipoEtapa.cs
+END
+BllArquivo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllArquivo.cs
+END
+BllTurma.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FNQ.SG/!svn/ver/178/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllTurma.cs
+END
+BllCargo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllCargo.cs
+END
+BllTurmaQuestionario.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllTurmaQuestionario.cs
+END
+BllGrupo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllGrupo.cs
+END
+BllQuestionarioPontuacao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllQuestionarioPontuacao.cs
+END
+BllSetor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllSetor.cs
+END
+BllPlanoAcao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllPlanoAcao.cs
+END
+BllCategoria.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/FNQ.SG/!svn/ver/131/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllCategoria.cs
+END
+BllTurmaEmpresaSatisfacao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllTurmaEmpresaSatisfacao.cs
+END
+BllContatoNivelEscolaridade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllContatoNivelEscolaridade.cs
+END
+BllLogAcao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FNQ.SG/!svn/ver/39/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllLogAcao.cs
+END
+BllTurmaEmpresa.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/FNQ.SG/!svn/ver/178/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllTurmaEmpresa.cs
+END
+BllEstadoRegiao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllEstadoRegiao.cs
+END
+BllAdmFuncionalidadeRelGrupo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FNQ.SG/!svn/ver/207/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllAdmFuncionalidadeRelGrupo.cs
+END
+BllAtendimento.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/FNQ.SG/!svn/ver/165/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllAtendimento.cs
+END
+BllAtividadeEconomica.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllAtividadeEconomica.cs
+END
+BllDesempenhoGlobal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FNQ.SG/!svn/ver/171/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllDesempenhoGlobal.cs
+END
+BllGrupoEmpresa.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllGrupoEmpresa.cs
+END
+BllBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/FNQ.SG/!svn/ver/30/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllBase.cs
+END
+BllRelatorioRanking.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FNQ.SG/!svn/ver/246/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllRelatorioRanking.cs
+END
+Vinit.SG.BLL.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FNQ.SG/!svn/ver/171/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/Vinit.SG.BLL.csproj
+END
+BllEmpresaCadastro.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllEmpresaCadastro.cs
+END
+BllInscricoesEmpresa.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FNQ.SG/!svn/ver/219/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllInscricoesEmpresa.cs
+END
+BllAdmGrupo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/FNQ.SG/!svn/ver/207/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllAdmGrupo.cs
+END
+BllEstado.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllEstado.cs
+END
+BllQuestionarioEmpresaResposta.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FNQ.SG/!svn/ver/172/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.BLL/BllQuestionarioEmpresaResposta.cs
+END

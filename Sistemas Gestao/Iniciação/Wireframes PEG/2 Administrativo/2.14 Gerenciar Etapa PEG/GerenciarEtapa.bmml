@@ -1,0 +1,194 @@
+<mockup version="1.0" skin="sketch" measuredW="1778" measuredH="791" mockupW="1677" mockupH="760">
+  <controls>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::SubTitle" x="238" y="276" w="-1" h="-1" measuredW="204" measuredH="40" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Gerenciar%20Etapas</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Icon" x="998" y="401" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GeoLocationIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Tooltip" x="1030" y="370" w="-1" h="-1" measuredW="141" measuredH="33.9" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ativar/Desativar</text>
+        <tooltipDirection>SW</tooltipDirection>
+      </controlProperties>
+    </control>
+    <control controlID="21" controlTypeID="__group__" x="101" y="31" w="1025" h="760" measuredW="1025" measuredH="760" zOrder="0" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="__group__" x="0" y="0" w="1025" h="760" measuredW="1025" measuredH="760" zOrder="0" locked="false" isInGroup="21">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="0" y="0" w="1025" h="760" measuredW="1025" measuredH="760" zOrder="0" locked="false" isInGroup="0">
+              <groupChildrenDescriptors>
+                <control controlID="2" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="0" y="0" w="1025" h="760" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <text>A%20Web%20Page%0Ahttp%3A//premiompe2010.fnq.org.br/admin/</text>
+                  </controlProperties>
+                </control>
+                <control controlID="3" controlTypeID="com.balsamiq.mockups::Image" x="64" y="663" w="919" h="62" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <src>../../../../AppData/Local/Microsoft/Windows/Temporary%2520Internet%2520Files/Content.Outlook/QXQQNVSZ/Vinit/PNQ/patrocinios2.png</src>
+                    <text/>
+                  </controlProperties>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="38" y="84" w="959" h="576" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="21"/>
+        <control controlID="2" controlTypeID="__group__" x="37" y="87" w="958" h="161" measuredW="958" measuredH="161" zOrder="2" locked="false" isInGroup="21">
+          <groupChildrenDescriptors>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="3" y="0" w="335" h="137" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="2">
+              <controlProperties>
+                <src>../../../../AppData/Local/Microsoft/Windows/Temporary%2520Internet%2520Files/Content.Outlook/QXQQNVSZ/Vinit/PNQ/img_top_esq.jpg</src>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::SubTitle" x="405" y="48" w="313" h="46" measuredW="56" measuredH="46" zOrder="1" locked="false" isInGroup="2">
+              <controlProperties>
+                <size>28</size>
+                <text>PEG</text>
+              </controlProperties>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::HRule" x="0" y="134" w="958" h="5" measuredW="100" measuredH="5" zOrder="2" locked="false" isInGroup="2"/>
+            <control controlID="4" controlTypeID="com.balsamiq.mockups::HRule" x="0" y="156" w="958" h="5" measuredW="100" measuredH="5" zOrder="3" locked="false" isInGroup="2"/>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::List" x="144" y="278" w="93" h="393" measuredW="100" measuredH="189" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Menu1%0A%20%0AMenu1%0A%20%0AMenu1%0A%20%0AMenu1%0A%20%0AMenu1</text>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::FieldSet" x="238" y="322" w="848" h="349" measuredW="200" measuredH="170" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Lista</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::Button" x="991" y="346" w="68" h="21" measuredW="63" measuredH="28" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22890%2C315%2C958%2C336%22%20href%3D%22GerenciarEtapaNacional_Resumo.bmml%22%20alt%3D%22GerenciarEtapaNacional_Resumo%22%20id%3D%2232%22/%3E</map>
+        <size>11</size>
+        <text>Resumo</text>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::DataGrid" x="251" y="370" w="808" h="277" measuredW="411" measuredH="268" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Nome%2CA%E7%E3o%0AAutodiagn%F3stico%20%0AAutodiagn%F3stico%20Administrativo%0AValida%E7%E3o%20por%20meio%20da%20an%E1lise%20das%20respostas%0AVisita%20pr%E9via%20do%20consultor%20%E0s%20empresas%20pr%E9-classificadas%0APlano%20Empresarial%20%28Fase%202%29%20%0AGest%E3o%20do%20Resultado%20%28Fase%203%29%0ANovo%20Ciclo%20do%20Plano%20Empresarial%20%28Fase%204%29%0AEncerramento%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::List" x="144" y="280" w="93" h="393" measuredW="100" measuredH="189" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Menu%20Adm%0A%20%0AMenu%20Adm%0A%20%0AMenu%20Adm%0A%20%0AMenu%20Adm%0A%20%0AMenu%20Adm</text>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::MenuBar" x="142" y="253" w="956" h="29" measuredW="265" measuredH="29" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <text>Menu%20Empresa%2C%20Menu%20Empresa%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::StickyNote" x="909" y="142" w="189" h="184" measuredW="109" measuredH="123" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Menu%20Empresa%20%28%20s%F3%20perfil%20empresa%20v%EA%29%20%0AMenu%20Adm%20%28%20s%F3%20adm%20v%EA%29%0AMenu%20Info%20%28%20todos%20veem%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::LinkBar" x="758" y="117" w="-1" h="-1" measuredW="336" measuredH="25" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Menu%20Info%2C%20Menu%20Info%2C%20Menu%20Info%2C%20Menu%20Info</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::Icon" x="998" y="434" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GeoLocationIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Icon" x="998" y="461" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GeoLocationIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::Icon" x="998" y="490" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GeoLocationIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::Label" x="251" y="344" w="-1" h="-1" measuredW="154" measuredH="25" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Turma%3A%20Nome%20da%20Turma</text>
+      </controlProperties>
+    </control>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::Icon" x="998" y="522" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GeoLocationIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::Icon" x="998" y="555" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GeoLocationIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::Arrow" x="1052" y="246" w="-1" h="-1" measuredW="150" measuredH="100" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>bottom</direction>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="58" controlTypeID="__group__" x="1213" y="185" w="565" h="292" measuredW="565" measuredH="292" zOrder="19" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Icon" x="463" y="187" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="0" locked="false" isInGroup="58">
+          <controlProperties>
+            <icon>GeoLocationIcon%7Csmall</icon>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="565" h="292" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="58">
+          <controlProperties>
+            <borderStyle>square</borderStyle>
+            <color>16448250</color>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::FieldSet" x="8" y="10" w="540" h="272" measuredW="200" measuredH="170" zOrder="2" locked="false" isInGroup="58">
+          <controlProperties>
+            <text>Resumo</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Button" x="435" y="246" w="-1" h="-1" measuredW="67" measuredH="28" zOrder="3" locked="false" isInGroup="58">
+          <controlProperties>
+            <href>GerenciarEtapaNacional%26bm%3BGerenciarEtapaNacional.bmml%26bm%3BGerenciarEtapaNacional.bmml%26bm%3BGerenciarEtapaNacional.bmml</href>
+            <map>%3Carea%20shape%3D%22rect%22%20coords%3D%221547%2C400%2C1614%2C428%22%20href%3D%22GerenciarEtapaNacional.bmml%22%20alt%3D%22GerenciarEtapaNacional%22%20id%3D%225%22/%3E</map>
+            <text>Fechar</text>
+          </controlProperties>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::Icon" x="533" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="4" locked="false" isInGroup="58">
+          <controlProperties>
+            <icon>CircledXIcon%7Csmall</icon>
+          </controlProperties>
+        </control>
+        <control controlID="7" controlTypeID="com.balsamiq.mockups::DataGrid" x="18" y="78" w="515" h="158" measuredW="546" measuredH="118" zOrder="5" locked="false" isInGroup="58">
+          <controlProperties>
+            <align>left</align>
+            <text>Etapa%2CRespons%E1vel%20%20%20%2CData%2Chora%0AAutodiagn%F3stico%20%2CAdministrador%2C30/11/2010%2C10%3A55%0AAutodiagn%F3stico%20Administrativo%20Nacional%2CAdministrador%2C30/11/2010%2C10%3A55%0AValidacao%20por%20meio%20da%20an%E1lise%20das%20respostas%2CAdministrador%2C30/11/2010%2C10%3A55</text>
+          </controlProperties>
+        </control>
+        <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="18" y="39" w="-1" h="-1" measuredW="44" measuredH="25" zOrder="6" locked="false" isInGroup="58">
+          <controlProperties>
+            <text>Turma</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::Icon" x="998" y="582" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GeoLocationIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="60" controlTypeID="com.balsamiq.mockups::Icon" x="998" y="615" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GeoLocationIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

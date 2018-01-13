@@ -1,0 +1,23 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[STP_SelecionaCategoriaByFlAceitaCpf]
+(
+@flAceitaCpf BIT
+)
+As    
+BEGIN     
+SET NOCOUNT ON  
+
+SELECT [CDA_CATEGORIA]
+      ,[TX_CATEGORIA]
+      ,[FL_ATIVO]
+      ,[FL_ACEITA_CPF]
+  FROM [TBL_CATEGORIA]
+	WHERE FL_ATIVO = 'TRUE' AND (@flAceitaCpf = 'TRUE' OR FL_ACEITA_CPF = @flAceitaCpf)
+ORDER BY TX_CATEGORIA
+RETURN  
+END  
+    
+--

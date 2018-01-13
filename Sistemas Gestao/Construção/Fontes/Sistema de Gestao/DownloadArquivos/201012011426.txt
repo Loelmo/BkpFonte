@@ -1,0 +1,33 @@
+Reunião MPE 2011
+
+SIACWEB-integração:
+Código de ação/de projeto: não temos definição ainda
+
+alteração (por combo para 2011): bairro, cargo, cidade
+codigo para estado: codigo e codigo sebrae (2 diferentes)
+faturamento e cnae (de acordo com siacweb tb)
+
+**desempenho do web service siac web: 2 segundos em media/registro
+
+cadastro/atualização siacweb:
+resgate de dados do siacweb para empresa: não ocorrerá
+
+atualização de dados no siacweb - verificar se sera realizado
+
+novos campos para base de dados, voltados ao cadastro do siacweb. cod empreendimento, cliente, ... (analisar web service)
+
+desempenho do web service
+
+ALINHAR COM ROBERTO
+
+validações cpf/cnpj (problema maior hoje: cpf nao é obrigatorio e checado)
+
+CONSISTENCIAS DE DADOS ANTES DA INTEGRAÇÃO (CEP, CNAE, ...)
+
+para 2010 - fazer integração com ultimo registro somente, nao integrar historicos!
+
+relatorios de ranking do PEG: diferentes questionarios/diferentes pontuacoes
+	segundo rfp - varios questionarios - usar mesmo processo definido para o mpe de exibição (porem fluxo diferente)
+
+ranking MPE - separa por categoria (questionario) após visita (para passar para finalista)
+

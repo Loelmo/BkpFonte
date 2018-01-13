@@ -1,0 +1,29 @@
+
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[STP_SelecionaAdmGrupoPorArquivo]
+(
+ @nIdArquivo INT
+)
+As    
+BEGIN     
+
+SET NOCOUNT ON  
+
+  SELECT distinct
+		CDA_GRUPO,
+		TX_GRUPO,
+		TX_DESCRICAO,
+		CEA_PROGRAMA,
+		case ISNULL(A.CEA_ARQUIVO, 0) when  @nIdArquivo then 1 else 0 end AS FL_SELECIONADO
+   FROM TBL_ADM_GRUPO G
+   LEFT JOIN TBL_REL_ARQUIVO_ADM_GRUPO A ON A.CEA_GRUPO = G.CDA_GRUPO and a.CEA_ARQUIVO = @nIdArquivo
+  
+RETURN  
+
+END  
+    
+--

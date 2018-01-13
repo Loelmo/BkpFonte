@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{642FE992-4FFE-4489-BDEA-D6FF219C3BF5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vinit.SG.Ent</RootNamespace>
+    <AssemblyName>Vinit.SG.Ent</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/Vinit.SG.Ent/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EntComparacaoResultados.cs" />
+    <Compile Include="RelRelatorioQuestoesEspeciais.cs" />
+    <Compile Include="EntDesempenhoGlobal.cs" />
+    <Compile Include="RelRankingFinalistaNacional.cs" />
+    <Compile Include="RelRankingCandidataNacional.cs" />
+    <Compile Include="EntCidadeRelEscritorioRegional.cs" />
+    <Compile Include="EntTurmaEmpresaArquivo.cs" />
+    <Compile Include="EntPlanoAcao.cs" />
+    <Compile Include="RelRankingPegFase2.cs" />
+    <Compile Include="EntCategoriaCustom.cs" />
+    <Compile Include="EntTurmaEmpresaSatisfacao.cs" />
+    <Compile Include="RelAvaliacao.cs" />
+    <Compile Include="RelRelatorioNumeroParticipantes.cs" />
+    <Compile Include="RelFiltroGeral.cs" />
+    <Compile Include="EntAtendimentoTipo.cs" />
+    <Compile Include="EntAtendimentoSistema.cs" />
+    <Compile Include="EntAtendimentoStatus.cs" />
+    <Compile Include="EntAtendimento.cs" />
+    <Compile Include="EntArquivo.cs" />
+    <Compile Include="EntArquivoGrupo.cs" />
+    <Compile Include="EntNoticiaGrupo.cs" />
+    <Compile Include="EntNoticia.cs" />
+    <Compile Include="EntCategoriaRelRamoAtividade.cs" />
+    <Compile Include="EntRamoAtividade.cs" />
+    <Compile Include="EntTipoFaturamento.cs" />
+    <Compile Include="RelParticipantesPorEtapa.cs" />
+    <Compile Include="RelRankingCandidataEstadual.cs" />
+    <Compile Include="RelRankingFinalista.cs" />
+    <Compile Include="RelFiltroRanking.cs" />
+    <Compile Include="EntEscritoriosRegionaisPermitidos.cs" />
+    <Compile Include="EntEstadosPermitidos.cs" />
+    <Compile Include="RelRanking.cs" />
+    <Compile Include="RelRankingClassificada.cs" />
+    <Compile Include="EntTurmaQuestionario.cs" />
+    <Compile Include="EntRelatorioRAA.cs" />
+    <Compile Include="EntAdmFuncionalidadeRelGrupoCustom.cs" />
+    <Compile Include="EntAdmUsuario.cs" />
+    <Compile Include="EntAdmUsuarioRelGrupoUsuario.cs" />
+    <Compile Include="EntBairro.cs" />
+    <Compile Include="EntCargo.cs" />
+    <Compile Include="EntEtapaResumo.cs" />
+    <Compile Include="EntInscricoesEmpresa.cs" />
+    <Compile Include="EntProgramaEmpresa.cs" />
+    <Compile Include="EntSetor.cs" />
+    <Compile Include="EntTipoEmpresa.cs" />
+    <Compile Include="EntCategoria.cs" />
+    <Compile Include="EntCategoriaRelAtividadeEconomica.cs" />
+    <Compile Include="EntCicloRelQuestionario.cs" />
+    <Compile Include="EntCidade.cs" />
+    <Compile Include="EntContatoNivelEscolaridade.cs" />
+    <Compile Include="EntCriterio.cs" />
+    <Compile Include="EntEscritorioRegional.cs" />
+    <Compile Include="EntEstado.cs" />
+    <Compile Include="EntEstadoRegiao.cs" />
+    <Compile Include="EntEtapa.cs" />
+    <Compile Include="EntContatoFaixaEtaria.cs" />
+    <Compile Include="EntFaturamento.cs" />
+    <Compile Include="EntFaturamentoTipo.cs" />
+    <Compile Include="EntGrupo.cs" />
+    <Compile Include="EntGrupoEmpresa.cs" />
+    <Compile Include="EntPais.cs" />
+    <Compile Include="EntPergunta.cs" />
+    <Compile Include="EntPerguntaResposta.cs" />
+    <Compile Include="EntPerguntaTipo.cs" />
+    <Compile Include="EntPrograma.cs" />
+    <Compile Include="EntQuestionario.cs" />
+    <Compile Include="EntQuestionarioEmpresa.cs" />
+    <Compile Include="EntQuestionarioPontuacao.cs" />
+    <Compile Include="EntAtividadeEconomica.cs" />
+    <Compile Include="EntTipoEtapa.cs" />
+    <Compile Include="EntTurma.cs" />
+    <Compile Include="EntTurmaEmpresa.cs" />
+    <Compile Include="EntQuestionarioEmpresaAvaliador.cs" />
+    <Compile Include="EntQuestionarioEmpresaResposta.cs" />
+    <Compile Include="EntEmpresaCadastro.cs" />
+    <Compile Include="EntDownload.cs" />
+    <Compile Include="EntConteudo.cs" />
+    <Compile Include="EntChamado.cs" />
+    <Compile Include="EntLogAcao.cs" />
+    <Compile Include="EntAdmGrupoRelUsuario.cs" />
+    <Compile Include="EntAdmFuncionalidade.cs" />
+    <Compile Include="EntAdmFuncionalidadeRelGrupo.cs" />
+    <Compile Include="EntAdmGrupo.cs" />
+    <Compile Include="EntTipoAcao.cs" />
+    <Compile Include="EntAdmTipoFuncionalidade.cs" />
+    <Compile Include="EntFuncionalidade.cs" />
+    <Compile Include="EntTurmasPermitidas.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vinit.SG.Common\Vinit.SG.Common.csproj">
+      <Project>{E6008743-5DBD-4F65-8E63-C293ACDDF31D}</Project>
+      <Name>Vinit.SG.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,17 @@
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.BLL\bin\Debug\BLL.dll.config
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.BLL\bin\Debug\BLL.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.BLL\bin\Debug\BLL.pdb
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.BLL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.BLL\bin\Debug\Vinit.SG.Common.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.BLL\bin\Debug\Vinit.SG.DAL.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.BLL\bin\Debug\Vinit.SG.Ent.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.BLL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.BLL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.BLL\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.BLL\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.BLL\bin\Debug\Vinit.SG.Common.pdb
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.BLL\bin\Debug\Vinit.SG.DAL.pdb
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.BLL\bin\Debug\Vinit.SG.Ent.pdb
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.BLL\obj\Debug\ResolveAssemblyReference.cache
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.BLL\obj\Debug\BLL.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.BLL\obj\Debug\BLL.pdb

@@ -1,0 +1,1265 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FNQ.SG/!svn/ver/219/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures
+END
+STP_ComparacaoResultadosFase1Fase4PreVista.sql
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/FNQ.SG/!svn/ver/247/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_ComparacaoResultadosFase1Fase4PreVista.sql
+END
+STP_SelecionaCidadePorEstado2.sql
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/FNQ.SG/!svn/ver/27/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaCidadePorEstado2.sql
+END
+STP_SelecionaAdmGrupoPorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/FNQ.SG/!svn/ver/207/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaAdmGrupoPorId.sql
+END
+STP_SelecionaQuestionarioEmpresaAtivoPorQuestionarioEmpresaTurma.sql
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/FNQ.SG/!svn/ver/126/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaQuestionarioEmpresaAtivoPorQuestionarioEmpresaTurma.sql
+END
+STP_SelecionaQuestionariosNaoRelacionadosNaTurma.sql
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaQuestionariosNaoRelacionadosNaTurma.sql
+END
+STP_SelecionaTurmaPorIdPrograma.sql
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaTurmaPorIdPrograma.sql
+END
+STP_AtualizaQuestionarioEmpresaSomenteFlagLeitura.sql
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AtualizaQuestionarioEmpresaSomenteFlagLeitura.sql
+END
+STP_SelecionaTurmaEmpresaPorTurmas.sql
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaTurmaEmpresaPorTurmas.sql
+END
+STP_SelecionaNoticiaPorEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaNoticiaPorEmpresa.sql
+END
+STP_SelecionaTurmaQuestionarioPorTurma.sql
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaTurmaQuestionarioPorTurma.sql
+END
+STP_ValidaUsuario.sql
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/FNQ.SG/!svn/ver/111/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_ValidaUsuario.sql
+END
+STP_SelecionaNoticiaPorFiltrosAdministrativo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaNoticiaPorFiltrosAdministrativo.sql
+END
+STP_SelecionaTipoEmpresaPorNome.sql
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaTipoEmpresaPorNome.sql
+END
+STP_SelecionaEtapaResumoNacional.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEtapaResumoNacional.sql
+END
+STP_SelecionaEtapa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEtapa.sql
+END
+STP_SelecionaSetorPorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaSetorPorId.sql
+END
+STP_InsereCidade.sql
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_InsereCidade.sql
+END
+STP_SelecionaTurmasPermitidas.sql
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/FNQ.SG/!svn/ver/115/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaTurmasPermitidas.sql
+END
+STP_SelecionaEtapaResumoPorIdEtapa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEtapaResumoPorIdEtapa.sql
+END
+STP_SelecionaQuestionarioEmpresaAvaliadorPorIdQuestionarioEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaQuestionarioEmpresaAvaliadorPorIdQuestionarioEmpresa.sql
+END
+STP_SelecionaCidadeSemEscritorioRegional.sql
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaCidadeSemEscritorioRegional.sql
+END
+STP_AlteraDePergunta.sql
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AlteraDePergunta.sql
+END
+STP_SelecionaContatoFaixaEtariaPorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaContatoFaixaEtariaPorId.sql
+END
+STP_SelecionaQuestionarios.sql
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaQuestionarios.sql
+END
+STP_InsereQuestionarioEmpresaAvaliador.sql
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_InsereQuestionarioEmpresaAvaliador.sql
+END
+STP_SelecionaAdmGrupoPorArquivo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/FNQ.SG/!svn/ver/207/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaAdmGrupoPorArquivo.sql
+END
+STP_SelecionaEstadoRegiao.sql
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEstadoRegiao.sql
+END
+STP_SelecionaAdmFuncionalidadeRelGrupo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaAdmFuncionalidadeRelGrupo.sql
+END
+STP_InsereNoticia.sql
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_InsereNoticia.sql
+END
+STP_AtivaDesativaTurma.sql
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AtivaDesativaTurma.sql
+END
+STP_SelecionaEmpresaCadastroPorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEmpresaCadastroPorId.sql
+END
+STP_SelecionaEscritoriosRegeionaisPermitidos.sql
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEscritoriosRegeionaisPermitidos.sql
+END
+STP_SelecionaEtapaPorEstado.sql
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEtapaPorEstado.sql
+END
+STP_AtualizaEscritorioRegional.sql
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AtualizaEscritorioRegional.sql
+END
+STP_InsereTipoEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_InsereTipoEmpresa.sql
+END
+STP_InsereTurmaQuestionario.sql
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_InsereTurmaQuestionario.sql
+END
+STP_AtualizaQuestionarioEmpresaInsereDevolucao.sql
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AtualizaQuestionarioEmpresaInsereDevolucao.sql
+END
+STP_DeletaEtapaPorTurma.sql
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_DeletaEtapaPorTurma.sql
+END
+STP_SelecionaRelatorioQuestoesEspeciaisPorFiltro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/FNQ.SG/!svn/ver/208/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaRelatorioQuestoesEspeciaisPorFiltro.sql
+END
+STP_SelecionaAvaliacaoPorFiltro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/FNQ.SG/!svn/ver/31/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaAvaliacaoPorFiltro.sql
+END
+STP_SelecionaRankingClassificadaPorFiltro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/FNQ.SG/!svn/ver/29/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaRankingClassificadaPorFiltro.sql
+END
+STP_SelecionaFuncionalidadesDoUsuario.sql
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/FNQ.SG/!svn/ver/108/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaFuncionalidadesDoUsuario.sql
+END
+STP_AtualizaQuestionarioEmpresaMudarTurmaEtapa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/FNQ.SG/!svn/ver/19/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AtualizaQuestionarioEmpresaMudarTurmaEtapa.sql
+END
+STP_SelecionaNoticiaPorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaNoticiaPorId.sql
+END
+STP_SelecionaFaturamento.sql
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaFaturamento.sql
+END
+STP_AtualizaEmpresaCadastro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AtualizaEmpresaCadastro.sql
+END
+STP_SelecionaAdmFuncionalidadePorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaAdmFuncionalidadePorId.sql
+END
+STP_SelecionaNumeroParticipantesPorEtapaEstadualEscritorioRegionalMpePorFiltros.sql
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaNumeroParticipantesPorEtapaEstadualEscritorioRegionalMpePorFiltros.sql
+END
+STP_DeletaGrupoPorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_DeletaGrupoPorId.sql
+END
+STP_SelecionaTurmaEmpresaPorIdEmpresaIdPrograma.sql
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaTurmaEmpresaPorIdEmpresaIdPrograma.sql
+END
+STP_SelecionaArquivoPorFiltro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaArquivoPorFiltro.sql
+END
+STP_SelecionaUsuarioPorSenha.sql
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaUsuarioPorSenha.sql
+END
+STP_InsereTurmaEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_InsereTurmaEmpresa.sql
+END
+STP_SelecionaEmpresaPorFiltroSimples.sql
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEmpresaPorFiltroSimples.sql
+END
+STP_InsereGrupoEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_InsereGrupoEmpresa.sql
+END
+STP_SelecionaSetor.sql
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaSetor.sql
+END
+STP_AtualizaUsuario.sql
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AtualizaUsuario.sql
+END
+STP_SelecionaEmpresaCadastroPorFiltros.sql
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEmpresaCadastroPorFiltros.sql
+END
+STP_AtualizaQuestionarioEmpresaSomenteDesclassificar.sql
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AtualizaQuestionarioEmpresaSomenteDesclassificar.sql
+END
+STP_SelecionaAdmFuncionalidadeRelGrupoCustom.sql
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaAdmFuncionalidadeRelGrupoCustom.sql
+END
+STP_Seleciona_NumeroParticipantesCategoriaEtapaFga.sql
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_Seleciona_NumeroParticipantesCategoriaEtapaFga.sql
+END
+STP_SelecionaQuestionariosEnviadosPorTurmaEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaQuestionariosEnviadosPorTurmaEmpresa.sql
+END
+STP_SelecionaEscritorioRegionalAtivo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEscritorioRegionalAtivo.sql
+END
+STP_AtualizaQuestionarioEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/FNQ.SG/!svn/ver/125/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AtualizaQuestionarioEmpresa.sql
+END
+STP_SelecionaCidadePorNomeEstado.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaCidadePorNomeEstado.sql
+END
+STP_InsereTurma.sql
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_InsereTurma.sql
+END
+STP_SelecionaDesempenhoGlobal2011.sql
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/FNQ.SG/!svn/ver/171/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaDesempenhoGlobal2011.sql
+END
+STP_SelecionaTurmaPorFiltros.sql
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaTurmaPorFiltros.sql
+END
+STP_SelecionaQuestionariosPorTurmaEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaQuestionariosPorTurmaEmpresa.sql
+END
+STP_SelecionaUsuarioAssociado.sql
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaUsuarioAssociado.sql
+END
+STP_AtivaDesativaEtapa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AtivaDesativaEtapa.sql
+END
+STP_SelecionaBairro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaBairro.sql
+END
+STP_Siac_AtualizaAtividadeEconomica.sql
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_Siac_AtualizaAtividadeEconomica.sql
+END
+STP_SelecionaPerguntaProximaPorQuestionarioPergunta.sql
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaPerguntaProximaPorQuestionarioPergunta.sql
+END
+STP_SelecionaEmpresasInscritasCategoriaPorFiltro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEmpresasInscritasCategoriaPorFiltro.sql
+END
+STP_SelecionaEstadosPermitido.sql
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEstadosPermitido.sql
+END
+STP_SelecionaQuestionarioPorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaQuestionarioPorId.sql
+END
+STP_DeletaUsuarioPorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_DeletaUsuarioPorId.sql
+END
+STP_SelecionaEmpresasInscritasAdministradorPorFiltro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEmpresasInscritasAdministradorPorFiltro.sql
+END
+STP_InsereQuestionarioEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/FNQ.SG/!svn/ver/115/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_InsereQuestionarioEmpresa.sql
+END
+STP_SelecionaProgramaEmpresaPorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaProgramaEmpresaPorId.sql
+END
+STP_SelecionaEtapaResumoPorIdEstado.sql
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEtapaResumoPorIdEstado.sql
+END
+STP_RankingEstadualPorTipoEtapaFiltros.sql
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_RankingEstadualPorTipoEtapaFiltros.sql
+END
+STP_SelecionaRankingFinalistaPorFiltro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/FNQ.SG/!svn/ver/34/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaRankingFinalistaPorFiltro.sql
+END
+STP_SelecionaTurmaPorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaTurmaPorId.sql
+END
+STP_SelecionaUsuarioPorNome.sql
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaUsuarioPorNome.sql
+END
+STP_AlteraDeTurma0.sql
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AlteraDeTurma0.sql
+END
+STP_SelecionaAdmGrupoRelUsuarioPorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaAdmGrupoRelUsuarioPorId.sql
+END
+STP_SelecionaAdmGrupoRelUsuario.sql
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaAdmGrupoRelUsuario.sql
+END
+STP_SelecionaCidadePorEstado.sql
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaCidadePorEstado.sql
+END
+STP_SelecionaGrupoPorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaGrupoPorId.sql
+END
+STP_SelecionaEtapaPorTipoEtapaTurmaEstado.sql
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEtapaPorTipoEtapaTurmaEstado.sql
+END
+STP_SelecionaTurmaCompativel0.sql
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaTurmaCompativel0.sql
+END
+STP_SelecionaQuestionariosAbertosPorTurmaEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaQuestionariosAbertosPorTurmaEmpresa.sql
+END
+STP_AtualizaProgramaEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AtualizaProgramaEmpresa.sql
+END
+STP_DeletaAdmUsuarioRelGrupoUsuario.sql
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_DeletaAdmUsuarioRelGrupoUsuario.sql
+END
+STP_SelecionaUsuarioPorFuncionalidade.sql
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaUsuarioPorFuncionalidade.sql
+END
+STP_Siac_AtualizaTipoEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_Siac_AtualizaTipoEmpresa.sql
+END
+STP_InsereAdmGrupo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FNQ.SG/!svn/ver/207/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_InsereAdmGrupo.sql
+END
+STP_SelecionaEscritorioRegionalPorIdEstado.sql
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEscritorioRegionalPorIdEstado.sql
+END
+STP_VoltarEtapaDoQuestionarioEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_VoltarEtapaDoQuestionarioEmpresa.sql
+END
+STP_ExisteEscritorioRegional.sql
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_ExisteEscritorioRegional.sql
+END
+STP_SelecionaEtapasNacionais.sql
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEtapasNacionais.sql
+END
+STP_DeletaGrupoEmpresaPorGrupo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_DeletaGrupoEmpresaPorGrupo.sql
+END
+STP_SelecionaGrupoPorIdTurmaEstado.sql
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaGrupoPorIdTurmaEstado.sql
+END
+STP_SelecionaUsuarioDisponiveis.sql
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaUsuarioDisponiveis.sql
+END
+STP_ExisteAssociacao.sql
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_ExisteAssociacao.sql
+END
+STP_SelecionaTurmaEmpresaPorIdTurmaIdEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/FNQ.SG/!svn/ver/28/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaTurmaEmpresaPorIdTurmaIdEmpresa.sql
+END
+STP_DesativaEtapasAnteriores.sql
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_DesativaEtapasAnteriores.sql
+END
+STP_InsereEtapaResumo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_InsereEtapaResumo.sql
+END
+STP_DeletaAdmGrupoPorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_DeletaAdmGrupoPorId.sql
+END
+STP_SelecionaAtividadeEconomica.sql
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaAtividadeEconomica.sql
+END
+STP_SelecionaAtividadeEconomicaPorFiltro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaAtividadeEconomicaPorFiltro.sql
+END
+STP_SelecionaCidade.sql
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaCidade.sql
+END
+STP_AtualizaRelatorioGeradoPorProtocolo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/FNQ.SG/!svn/ver/125/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AtualizaRelatorioGeradoPorProtocolo.sql
+END
+STP_SelecionaTurmaCompativel.sql
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/FNQ.SG/!svn/ver/19/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaTurmaCompativel.sql
+END
+STP_ExcluirEscritorioRegional.sql
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_ExcluirEscritorioRegional.sql
+END
+STP_SelecionaBairroPorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaBairroPorId.sql
+END
+STP_InsereEtapa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_InsereEtapa.sql
+END
+STP_RemoverEscritorioRegionalDaCidade.sql
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_RemoverEscritorioRegionalDaCidade.sql
+END
+STP_SelecionaQuestionarioPontuacaoPorQuestionario.sql
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaQuestionarioPontuacaoPorQuestionario.sql
+END
+STP_DeletaTurmaQuestionarioPorTurma.sql
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_DeletaTurmaQuestionarioPorTurma.sql
+END
+STP_SelecionaArquivoPorEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaArquivoPorEmpresa.sql
+END
+STP_SelecionaUsuarioPorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaUsuarioPorId.sql
+END
+STP_AtualizaAdmGrupo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AtualizaAdmGrupo.sql
+END
+STP_SelecionaAdmFuncionalidade.sql
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaAdmFuncionalidade.sql
+END
+STP_ObterPermissaoBotoes.sql
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_ObterPermissaoBotoes.sql
+END
+STP_SelecionaArquivoPorFiltrosAdministrativo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaArquivoPorFiltrosAdministrativo.sql
+END
+STP_InsereLogAcao.sql
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FNQ.SG/!svn/ver/39/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_InsereLogAcao.sql
+END
+STP_SelecionaBairroPorCidade.sql
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaBairroPorCidade.sql
+END
+STP_SelecionaEmpresaPorGrupo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEmpresaPorGrupo.sql
+END
+STP_DesclassificaQuestionarioEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_DesclassificaQuestionarioEmpresa.sql
+END
+STP_SelecionaPerguntasPorQuestionario.sql
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaPerguntasPorQuestionario.sql
+END
+STP_SelecionaQuestionarioEmpresaPorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/FNQ.SG/!svn/ver/126/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaQuestionarioEmpresaPorId.sql
+END
+STP_SelecionaEmpresasInscritasEstadoPorFiltro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEmpresasInscritasEstadoPorFiltro.sql
+END
+STP_AtualizaTurma.sql
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AtualizaTurma.sql
+END
+STP_SelecionaAdmFuncionalidadeRelGrupoPorIdCustom.sql
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaAdmFuncionalidadeRelGrupoPorIdCustom.sql
+END
+STP_SelecionaContatoNivelEscolaridadePorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaContatoNivelEscolaridadePorId.sql
+END
+STP_SelecionaCidadePorEstadoEscritorioRegionalRegiao.sql
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaCidadePorEstadoEscritorioRegionalRegiao.sql
+END
+STP_SelecionaRespostaEmpresaAvaliacaoPorPergunta.sql
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaRespostaEmpresaAvaliacaoPorPergunta.sql
+END
+STP_SelecionaGrupoEmpresaPorGrupo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaGrupoEmpresaPorGrupo.sql
+END
+STP_SelecionaEtapaAtivaPorEstadoTurma.sql
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/FNQ.SG/!svn/ver/19/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEtapaAtivaPorEstadoTurma.sql
+END
+STP_SelecionaEscritorioRegionalPorIdTurmaEstado.sql
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEscritorioRegionalPorIdTurmaEstado.sql
+END
+STP_SelecionaCategoriaByFlAceitaCpf.sql
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaCategoriaByFlAceitaCpf.sql
+END
+STP_InsereAdmGrupoRelUsuario.sql
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_InsereAdmGrupoRelUsuario.sql
+END
+STP_SelecionaEstadoPorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEstadoPorId.sql
+END
+STP_ExisteUsuarioRelGrupoUsuario.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_ExisteUsuarioRelGrupoUsuario.sql
+END
+STP_SelecionaPorIdTipoFaturamento.sql
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaPorIdTipoFaturamento.sql
+END
+STP_SelecionaEtapaAnteriorPorEtapaEstadoOrdem.sql
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEtapaAnteriorPorEtapaEstadoOrdem.sql
+END
+STP_SelecionaQuestionarioEmpresaPorProtocolo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/FNQ.SG/!svn/ver/126/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaQuestionarioEmpresaPorProtocolo.sql
+END
+STP_SelecionaTipoEtapaPorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaTipoEtapaPorId.sql
+END
+STP_AlterarEtapaDoQuestionarioEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AlterarEtapaDoQuestionarioEmpresa.sql
+END
+STP_SelecionaProximaPerguntaPorQuestionarioEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaProximaPerguntaPorQuestionarioEmpresa.sql
+END
+STP_SelecionaEmpresasInscritasDigitadorPorFiltro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEmpresasInscritasDigitadorPorFiltro.sql
+END
+STP_SelecionaTipoEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/FNQ.SG/!svn/ver/43/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaTipoEmpresa.sql
+END
+STP_SelecionaUsuarioPorFiltro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaUsuarioPorFiltro.sql
+END
+STP_ValidaEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_ValidaEmpresa.sql
+END
+STP_SelecionaCargo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaCargo.sql
+END
+STP_SelecionaEstadosPorTurma.sql
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEstadosPorTurma.sql
+END
+STP_SelecionaEmpresaCadastroNaoInscritasPorFiltro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEmpresaCadastroNaoInscritasPorFiltro.sql
+END
+STP_AtualizaNoticia.sql
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AtualizaNoticia.sql
+END
+STP_SelecionaTurmaCorrentePorIdUsuario.sql
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaTurmaCorrentePorIdUsuario.sql
+END
+STP_SelecionaTurmaEmpresaUltimaPorIdProgramaIdEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaTurmaEmpresaUltimaPorIdProgramaIdEmpresa.sql
+END
+STP_SelecionaEscritorioRegional.sql
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEscritorioRegional.sql
+END
+STP_SelecionaPrimeiraPerguntaPorQuestionarioCriterio.sql
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaPrimeiraPerguntaPorQuestionarioCriterio.sql
+END
+STP_AlteraEscritorioRegionalDaCidade.sql
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AlteraEscritorioRegionalDaCidade.sql
+END
+STP_SelecionaQuestionarioEmpresaAtivoPorEmpresaTurma.sql
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/FNQ.SG/!svn/ver/126/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaQuestionarioEmpresaAtivoPorEmpresaTurma.sql
+END
+STP_SelecionaQuestionarioPontuacaoPorIdQuestionarioEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaQuestionarioPontuacaoPorIdQuestionarioEmpresa.sql
+END
+STP_SelecionaTurmaAtiva.sql
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaTurmaAtiva.sql
+END
+STP_SelecionaCidadePorEscritorioRegional.sql
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaCidadePorEscritorioRegional.sql
+END
+STP_SelecionaAdmGrupoPorNome.sql
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/FNQ.SG/!svn/ver/207/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaAdmGrupoPorNome.sql
+END
+STP_AtivaDesativaGrupo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AtivaDesativaGrupo.sql
+END
+STP_AtualizaAdmFuncionalidadeRelGrupo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AtualizaAdmFuncionalidadeRelGrupo.sql
+END
+STP_SelecionaNumeroParticipantesPorEtapaEstadualCategoriaMpePorFiltros.sql
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaNumeroParticipantesPorEtapaEstadualCategoriaMpePorFiltros.sql
+END
+STP_SelecionaTurmaEmpresaPorIdEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaTurmaEmpresaPorIdEmpresa.sql
+END
+STP_DeletaAdmGrupoRelUsuarioPorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_DeletaAdmGrupoRelUsuarioPorId.sql
+END
+STP_AtivaInativaTurmaEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_AtivaInativaTurmaEmpresa.sql
+END
+STP_SelecionaPerguntaAnteriorPorQuestionarioPergunta.sql
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaPerguntaAnteriorPorQuestionarioPergunta.sql
+END
+STP_ExisteFuncionalidadeRelGrupo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_ExisteFuncionalidadeRelGrupo.sql
+END
+STP_DeletaTurmaQuestionario.sql
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_DeletaTurmaQuestionario.sql
+END
+STP_SelecionaUsuario.sql
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaUsuario.sql
+END
+STP_SelecionaEtapaPorId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEtapaPorId.sql
+END
+STP_SelecionaHistoricoQuestionarioRAAPorFiltro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaHistoricoQuestionarioRAAPorFiltro.sql
+END
+STP_DeletaCidadeRelEscritorioRegional.sql
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/FNQ.SG/!svn/ver/63/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_DeletaCidadeRelEscritorioRegional.sql
+END
+STP_SelecionaEmpresaPorFiltro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/FNQ.SG/!svn/ver/219/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEmpresaPorFiltro.sql
+END
+STP_SelecionaCategoria.sql
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaCategoria.sql
+END
+STP_SelecionaEtapasEstadual.sql
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/FNQ.SG/!svn/ver/24/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEtapasEstadual.sql
+END
+STP_SelecionaAdmGrupoPorNoticia.sql
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/FNQ.SG/!svn/ver/207/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaAdmGrupoPorNoticia.sql
+END
+STP_SelecionaQuestionarioEmpresaAbertoPorQuestionarioEmpresaTurma.sql
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/FNQ.SG/!svn/ver/126/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaQuestionarioEmpresaAbertoPorQuestionarioEmpresaTurma.sql
+END
+STP_SelecionaQuestionarioEmpresaPorQuestionarioEmpresaTurma.sql
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/FNQ.SG/!svn/ver/126/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaQuestionarioEmpresaPorQuestionarioEmpresaTurma.sql
+END
+STP_SelecionaRankingFase2PorFiltro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaRankingFase2PorFiltro.sql
+END
+STP_SelecionaQuestionarioEmpresaAtivoPorEmpresaEtapa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/FNQ.SG/!svn/ver/126/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaQuestionarioEmpresaAtivoPorEmpresaEtapa.sql
+END
+STP_SelecionaDesempenhoGlobal2010.sql
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/FNQ.SG/!svn/ver/171/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaDesempenhoGlobal2010.sql
+END
+STP_InsereEscritorioRegional.sql
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_InsereEscritorioRegional.sql
+END
+STP_SelecionaNoticiaPorFiltro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaNoticiaPorFiltro.sql
+END
+STP_SelecionaRankingCandidataNacionalPorFiltro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/FNQ.SG/!svn/ver/31/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaRankingCandidataNacionalPorFiltro.sql
+END
+STP_SelecionaQuestionarioEmpresaRelatorioRAAPorFiltros.sql
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/FNQ.SG/!svn/ver/126/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaQuestionarioEmpresaRelatorioRAAPorFiltros.sql
+END
+STP_ExisteGrupo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/FNQ.SG/!svn/ver/208/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_ExisteGrupo.sql
+END
+STP_SelecionaGrupoEmpresaPorFiltros.sql
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaGrupoEmpresaPorFiltros.sql
+END
+STP_SelecionaQuestionarioEmpresaPorEmpresaTurma.sql
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/FNQ.SG/!svn/ver/126/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaQuestionarioEmpresaPorEmpresaTurma.sql
+END
+STP_SelecionaQuestionarioEmpresaPorQuestionarioEmpresaEtapa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/FNQ.SG/!svn/ver/126/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaQuestionarioEmpresaPorQuestionarioEmpresaEtapa.sql
+END
+STP_SelecionaRespostasDesempenhoGlobal.sql
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/FNQ.SG/!svn/ver/213/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaRespostasDesempenhoGlobal.sql
+END
+STP_SelecionaProximaEtapaPorEtapaEstadoOrdem.sql
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaProximaEtapaPorEtapaEstadoOrdem.sql
+END
+STP_SelecionaAdmGrupo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/FNQ.SG/!svn/ver/208/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaAdmGrupo.sql
+END
+STP_InsereCidadeRelEscritorioRegional.sql
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_InsereCidadeRelEscritorioRegional.sql
+END
+STP_SelecionaRankingCandidataPorFiltro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaRankingCandidataPorFiltro.sql
+END
+STP_SelecionaTurmaEmpresaAnteriorPorEmpresaCadastro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/FNQ.SG/!svn/ver/26/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaTurmaEmpresaAnteriorPorEmpresaCadastro.sql
+END
+STP_SelecionaAdmGrupoRelUsuarioPorIdGrupo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/FNQ.SG/!svn/ver/215/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaAdmGrupoRelUsuarioPorIdGrupo.sql
+END
+STP_DeletaQuestionarioPontuacaoPorIdQuestionarioEmpresa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_DeletaQuestionarioPontuacaoPorIdQuestionarioEmpresa.sql
+END
+STP_SelecionaEscritorioRegionalAtivoPorFiltro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/FNQ.SG/!svn/ver/128/Constru%C3%A7%C3%A3o/Fontes/Banco%20de%20Dados/Procedures/STP_SelecionaEscritorioRegionalAtivoPorFiltro.sql
+END

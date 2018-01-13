@@ -1,0 +1,18 @@
+<Configuration>
+  <SettingsComponent>
+    <string>
+      <setting name="TeamCity.Toolbar.Shown">-TeamCity;</setting>
+    </string>
+    <integer>
+      <setting name="TeamCity.ServerChanges.HorizontalSplitter">400</setting>
+      <setting name="TeamCity.ServerChanges.VerticalSplitter">200</setting>
+    </integer>
+    <boolean>
+      <setting name="TeamCity.ServerChanges.ServerUserChangesView.HideSuccessful">False</setting>
+      <setting name="TeamCity.ServerChanges.ServerUserChangesView.ShowPersonalOnly">False</setting>
+      <setting name="TeamCity.ServerChanges.UseVerticalLayout">True</setting>
+      <setting name="TeamCity.ServerChangesView.Visible">False</setting>
+      <setting name="TeamCity.ServerUserBuilds.HideSucessfull">False</setting>
+    </boolean>
+  </SettingsComponent>
+</Configuration>

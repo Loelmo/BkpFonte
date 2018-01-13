@@ -1,0 +1,30 @@
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\library\ABCpdf.DLL
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\library\ABCpdfCE6.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\library\ABCpdfCE7.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Sistema de Gestao.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Sistema de Gestao.pdb
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\ABCpdf.DLL
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\AjaxControlToolkit.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\BLL.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\DundasWebChart.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\FredCK.FCKeditorV2.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Ionic.Zip.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\log4net.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\System.Data.DataSetExtensions.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\System.Web.DataVisualization.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Vinit.SG.Common.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Vinit.SG.Ent.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Vinit.SG.DAL.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Microsoft.Practices.ServiceLocation.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Microsoft.Practices.Unity.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Microsoft.Practices.Unity.Interception.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\BLL.pdb
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Vinit.SG.Common.pdb
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Vinit.SG.Ent.pdb
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Vinit.SG.DAL.pdb
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\obj\Debug\ResolveAssemblyReference.cache
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\obj\Debug\Sistema de Gestao.dll.licenses
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\obj\Debug\Sistema de Gestao.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\obj\Debug\Sistema de Gestao.pdb

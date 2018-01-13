@@ -1,0 +1,28 @@
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[STP_SelecionaAdmGrupoPorNoticia]
+(
+ @nIdNoticia INT
+)
+As    
+BEGIN     
+
+SET NOCOUNT ON  
+
+  SELECT distinct
+		CDA_GRUPO,
+		TX_GRUPO,
+		TX_DESCRICAO,
+		CEA_PROGRAMA,
+		case ISNULL(N.CEA_NOTICIA, 0) when  @nIdNoticia then 1 else 0 end AS FL_SELECIONADO
+   FROM TBL_ADM_GRUPO G
+   LEFT JOIN TBL_REL_NOTICIA_ADM_GRUPO N ON N.CEA_GRUPO = G.CDA_GRUPO AND N.CEA_NOTICIA = @nIdNoticia
+  
+RETURN  
+
+END  
+    
+--

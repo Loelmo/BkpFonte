@@ -1,0 +1,29 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[STP_SelecionaAdmGrupoPorId]
+(
+ @nIdAdmGrupo int
+)
+As    
+BEGIN     
+
+SET NOCOUNT ON  
+
+  SELECT
+		CDA_GRUPO,
+		TX_GRUPO,
+		TX_DESCRICAO,
+		CEA_PROGRAMA
+   FROM TBL_ADM_GRUPO
+  WHERE CDA_GRUPO = @nIdAdmGrupo
+  
+RETURN  
+
+END  
+    
+--
+
+
+

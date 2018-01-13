@@ -1,0 +1,29 @@
+USE [Sistema Gestao]
+GO
+/****** Object:  StoredProcedure [dbo].[STP_DesativaEtapasAnteriores]    Script Date: 02/11/2011 15:02:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+ALTER PROCEDURE [dbo].[STP_DesativaEtapasAnteriores]
+(
+@nCEA_TURMA INT,
+@NU_ORDEM_FLUXO INT
+)
+As    
+BEGIN     
+
+SET NOCOUNT ON  
+
+UPDATE [TBL_ETAPA]
+   SET [FL_ATIVO] = 0
+  WHERE CEA_TURMA = @nCEA_TURMA
+  AND CEA_TIPO_ETAPA IN (SELECT CDA_TIPO_ETAPA FROM TBL_TIPO_ETAPA WHERE NU_ORDEM_FLUXO < @NU_ORDEM_FLUXO)
+  
+RETURN  
+
+END  
+    
+--

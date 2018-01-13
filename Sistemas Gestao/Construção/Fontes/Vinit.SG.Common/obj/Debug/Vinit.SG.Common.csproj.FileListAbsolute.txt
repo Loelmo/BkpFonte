@@ -1,0 +1,5 @@
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.Common\bin\Debug\Vinit.SG.Common.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.Common\bin\Debug\Vinit.SG.Common.pdb
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.Common\obj\Debug\ResolveAssemblyReference.cache
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.Common\obj\Debug\Vinit.SG.Common.dll
+D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.Common\obj\Debug\Vinit.SG.Common.pdb

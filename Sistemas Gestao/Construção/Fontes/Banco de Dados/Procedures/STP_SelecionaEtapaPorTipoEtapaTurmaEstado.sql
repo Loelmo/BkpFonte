@@ -1,0 +1,33 @@
+USE [Sistema Gestao]
+GO
+/****** Object:  StoredProcedure [dbo].[STP_SelecionaEtapaPorTipoEtapaTurmaEstado]    Script Date: 02/09/2011 16:20:00 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+ALTER PROCEDURE [dbo].[STP_SelecionaEtapaPorTipoEtapaTurmaEstado]  
+(  
+@nCEA_TIPO_ETAPA INT,
+@nCEA_TURMA INT,
+@nCEA_ESTADO INT
+)  
+As      
+BEGIN       
+SET NOCOUNT ON    
+  
+SELECT ET.[CDA_ETAPA]
+      ,ET.[TX_ETAPA]
+      ,ET.[CEA_TURMA]
+      ,ET.[FL_ATIVO]
+      ,ET.[CEA_TIPO_ETAPA]
+      ,ET.[CEA_ESTADO]
+  FROM [TBL_ETAPA] ET 
+  WHERE ET.CEA_TIPO_ETAPA =  COALESCE(@nCEA_TIPO_ETAPA,ET.CEA_TIPO_ETAPA) 
+    AND ET.CEA_TURMA = @nCEA_TURMA
+    AND (ET.CEA_ESTADO = @nCEA_ESTADO OR @nCEA_ESTADO IS NULL OR ET.CEA_ESTADO IS NULL)
+  
+    
+RETURN    
+END

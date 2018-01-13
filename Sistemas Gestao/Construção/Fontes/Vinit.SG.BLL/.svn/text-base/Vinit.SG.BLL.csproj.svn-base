@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DD727832-3F86-4991-AC09-E0301D8619FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/BLL/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Vinit.SG.DLL.Common\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BllAdmFuncionalidade.cs" />
+    <Compile Include="BllAdmFuncionalidadeRelGrupo.cs" />
+    <Compile Include="BllAdmGrupo.cs" />
+    <Compile Include="BllAdmGrupoRelUsuario.cs" />
+    <Compile Include="BllAdmUsuarioRelGrupoUsuario.cs" />
+    <Compile Include="BllAtividadeEconomica.cs" />
+    <Compile Include="BllBairro.cs" />
+    <Compile Include="BllBase.cs" />
+    <Compile Include="BllCargo.cs" />
+    <Compile Include="BllCategoria.cs" />
+    <Compile Include="BllCidade.cs" />
+    <Compile Include="BllContatoFaixaEtaria.cs" />
+    <Compile Include="BllContatoNivelEscolaridade.cs" />
+    <Compile Include="BllCriterio.cs" />
+    <Compile Include="BllDesempenhoGlobal.cs" />
+    <Compile Include="BllEmpresaCadastro.cs" />
+    <Compile Include="BllEscritorioRegional.cs" />
+    <Compile Include="BllEstado.cs" />
+    <Compile Include="BllEstadoRegiao.cs" />
+    <Compile Include="BllEtapa.cs" />
+    <Compile Include="BllEtapaResumo.cs" />
+    <Compile Include="BllFaturamento.cs" />
+    <Compile Include="BllGrupo.cs" />
+    <Compile Include="BllGrupoEmpresa.cs" />
+    <Compile Include="BllInscricoesEmpresa.cs" />
+    <Compile Include="BllProgramaEmpresa.cs" />
+    <Compile Include="BllSetor.cs" />
+    <Compile Include="BllTipoEmpresa.cs" />
+    <Compile Include="BllTurma.cs" />
+    <Compile Include="BllAdmUsuario.cs" />
+    <Compile Include="BllRelatorio.cs" />
+    <Compile Include="BllTurmaEmpresa.cs" />
+    <Compile Include="BllTurmaQuestionario.cs" />
+    <Compile Include="BllQuestionario.cs" />
+    <Compile Include="BllQuestionarioEmpresa.cs" />
+    <Compile Include="BllQuestionarioEmpresaResposta.cs" />
+    <Compile Include="BllPergunta.cs" />
+    <Compile Include="BllRelatorioRanking.cs" />
+    <Compile Include="BllTipoEtapa.cs" />
+    <Compile Include="BllQuestionarioEmpresaAvaliador.cs" />
+    <Compile Include="BllNoticia.cs" />
+    <Compile Include="BllArquivo.cs" />
+    <Compile Include="BllAtendimento.cs" />
+    <Compile Include="BllAtendimentoTipo.cs" />
+    <Compile Include="BllAtendimentoStatus.cs" />
+    <Compile Include="BllAtendimentoSistema.cs" />
+    <Compile Include="BllAuxiliar.cs" />
+    <Compile Include="BllQuestionarioEmpresaCalculoPontuacao.cs" />
+    <Compile Include="BllQuestionarioPontuacao.cs" />
+    <Compile Include="BllIntegracaoSiac.cs" />
+    <Compile Include="BllTurmaEmpresaSatisfacao.cs" />
+    <Compile Include="BllPlanoAcao.cs" />
+    <Compile Include="BllTurmaEmpresaArquivo.cs" />
+    <Compile Include="BllLogAcao.cs" />
+    <Compile Include="BllPerguntaResposta.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vinit.SG.Common\Vinit.SG.Common.csproj">
+      <Project>{E6008743-5DBD-4F65-8E63-C293ACDDF31D}</Project>
+      <Name>Vinit.SG.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vinit.SG.DAL\Vinit.SG.DAL.csproj">
+      <Project>{A00D8F49-D958-45F3-8ED9-A5D7ABCE0BC5}</Project>
+      <Name>Vinit.SG.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vinit.SG.Ent\Vinit.SG.Ent.csproj">
+      <Project>{642FE992-4FFE-4489-BDEA-D6FF219C3BF5}</Project>
+      <Name>Vinit.SG.Ent</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

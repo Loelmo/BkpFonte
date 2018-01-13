@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/FNQ.SG/!svn/ver/207/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.Common/Utils
+END
+DoubleUtils.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.Common/Utils/DoubleUtils.cs
+END
+IntUtils.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FNQ.SG/!svn/ver/28/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.Common/Utils/IntUtils.cs
+END
+DateTimeUtils.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.Common/Utils/DateTimeUtils.cs
+END
+DateUtils.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.Common/Utils/DateUtils.cs
+END
+BooleanUtils.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.Common/Utils/BooleanUtils.cs
+END
+ObjectUtils.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.Common/Utils/ObjectUtils.cs
+END
+StringUtils.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FNQ.SG/!svn/ver/166/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.Common/Utils/StringUtils.cs
+END
+FormatUtils.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FNQ.SG/!svn/ver/207/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.Common/Utils/FormatUtils.cs
+END

@@ -1,0 +1,40 @@
+USE [SISTEMA GESTAO_desenv]
+GO
+/****** Object:  StoredProcedure [dbo].[STP_SelecionaArquivoPorEmpresa]    Script Date: 02/17/2011 17:42:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[STP_SelecionaArquivoPorEmpresa]
+(
+@IdEstado INT,
+@IdPrograma INT,
+@IdTurma INT
+,@Titulo VARCHAR(255),
+@DataInicio DATETIME,
+@DataFim DATETIME
+)
+As    
+BEGIN     
+
+SET NOCOUNT ON  
+
+SELECT [CDA_ARQUIVO]
+      ,[CEA_ESTADO]
+      ,[CEA_PROGRAMA]
+      ,[CEA_TURMA]
+      ,[NUM_PRIORIDADE]
+      ,[TX_TITULO]
+      ,[TX_CAMINHO]
+      ,[DT_CADASTRO]
+      ,[DT_ALTERACAO]
+      ,[FL_ATIVO]
+      ,[FL_USUARIO_ADMINISTRATIVO]
+  FROM [TBL_ARQUIVO]
+  WHERE (CEA_ESTADO IS NULL OR CEA_ESTADO = @IdEstado) AND (CEA_PROGRAMA IS NULL OR CEA_PROGRAMA = @IdPrograma)
+		 AND (CEA_TURMA IS NULL OR CEA_TURMA = @IdTurma) AND FL_ATIVO = 'TRUE' AND FL_USUARIO_ADMINISTRATIVO = 0
+		 AND TX_TITULO LIKE '%' + @Titulo + '%' AND DT_CADASTRO BETWEEN @DataInicio AND @DataFim
+  ORDER BY NUM_PRIORIDADE, [DT_CADASTRO] DESC
+RETURN  
+
+END

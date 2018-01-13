@@ -1,0 +1,1241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="CadastroAtender" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="CadastroAtender" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;strong&gt;&lt;h3&gt;Regras de Negócio Gerais:&lt;/h3&gt;&lt;/strong&gt;
+A especificação a seguir define funções que serão disponibilizadas pelo SIACWEB para utilização
+de outros sistemas, como SGE, SIGEOR, etc... que necessitem acessar diretamente a base do SIAC para
+registro de informações relacionadas ao cadastro de público alvo.
+&lt;br /&gt;
+&lt;strong&gt;&lt;h3&gt;Padrões Gerais:&lt;/h3&gt;&lt;/strong&gt;
+Os retornos destes métodos serão sempre um documento XML válido (string).
+&lt;br /&gt;
+O documento XML deve utilizar o padrão RPC-Style (Remote Procedure Call) e ser estruturado
+com o modelo de referenciamento simples.
+&lt;br /&gt;
+Todas as tags devem ser sempre retornadas mesmo que vazias.&lt;br /&gt;
+Os métodos transacionais antigos continuarão a utilizar PIPE para não causar impacto nasaplicações que os utilizam atualmente. Os métodos novos poderão ser implementados sem utilização do PIPE&lt;br /&gt;
+As datas serão sempre passadas em formato DDMMYYYY.&lt;br /&gt;
+Para anular um parâmetro numérico deve-se passar 0 (zero) para fazer o mesmo num parâmetrostring deve-se passar uma string vazia.</wsdl:documentation>
+  <wsdl:types />
+  <wsdl:message name="Util_Rec_EscolaridadeSoapIn" />
+  <wsdl:message name="Util_Rec_EscolaridadeSoapOut">
+    <wsdl:part name="Util_Rec_EscolaridadeResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_TiposDeEmpresaSoapIn" />
+  <wsdl:message name="Util_Rec_TiposDeEmpresaSoapOut">
+    <wsdl:part name="Util_Rec_TiposDeEmpresaResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_FaturamentoEmpresaSoapIn" />
+  <wsdl:message name="Util_Rec_FaturamentoEmpresaSoapOut">
+    <wsdl:part name="Util_Rec_FaturamentoEmpresaResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_CargosSoapIn" />
+  <wsdl:message name="Util_Rec_CargosSoapOut">
+    <wsdl:part name="Util_Rec_CargosResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_AtividadesEconomicasSoapIn">
+    <wsdl:part name="en_PalavraChave" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_AtividadesEconomicasSoapOut">
+    <wsdl:part name="Util_Rec_AtividadesEconomicasResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_EnderecoPorCEPSoapIn">
+    <wsdl:part name="en_CEP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_EnderecoPorCEPSoapOut">
+    <wsdl:part name="Util_Rec_EnderecoPorCEPResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_PaisesSoapIn" />
+  <wsdl:message name="Util_Rec_PaisesSoapOut">
+    <wsdl:part name="Util_Rec_PaisesResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_EstadosSoapIn" />
+  <wsdl:message name="Util_Rec_EstadosSoapOut">
+    <wsdl:part name="Util_Rec_EstadosResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_EstadosPorPaisSoapIn">
+    <wsdl:part name="en_CodPais" type="s:int" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_EstadosPorPaisSoapOut">
+    <wsdl:part name="Util_Rec_EstadosPorPaisResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_MunicipiosPorEstadoSoapIn">
+    <wsdl:part name="en_CodEstado" type="s:int" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_MunicipiosPorEstadoSoapOut">
+    <wsdl:part name="Util_Rec_MunicipiosPorEstadoResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_BairrosPorMunicipioSoapIn">
+    <wsdl:part name="en_CodMunicipio" type="s:int" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_BairrosPorMunicipioSoapOut">
+    <wsdl:part name="Util_Rec_BairrosPorMunicipioResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_LogradourosPorBairroSoapIn">
+    <wsdl:part name="en_CodBairro" type="s:int" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_LogradourosPorBairroSoapOut">
+    <wsdl:part name="Util_Rec_LogradourosPorBairroResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_TodasPessoasFisicasSoapIn">
+    <wsdl:part name="en_Cpf" type="s:string" />
+    <wsdl:part name="en_NomeCompleto" type="s:string" />
+    <wsdl:part name="en_CodParceiro" type="s:int" />
+    <wsdl:part name="en_NomeAbreviado" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_TodasPessoasFisicasSoapOut">
+    <wsdl:part name="Util_Rec_TodasPessoasFisicasResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_DadosPessoaFisicaSoapIn">
+    <wsdl:part name="en_Cpf" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_DadosPessoaFisicaSoapOut">
+    <wsdl:part name="Util_Rec_DadosPessoaFisicaResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trans_Ins_CadastroCompletoPFSoapIn">
+    <wsdl:part name="en_parametros" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trans_Ins_CadastroCompletoPFSoapOut">
+    <wsdl:part name="Trans_Ins_CadastroCompletoPFResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trans_Alt_CadastroCompletoPFSoapIn">
+    <wsdl:part name="parametros" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trans_Alt_CadastroCompletoPFSoapOut">
+    <wsdl:part name="Trans_Alt_CadastroCompletoPFResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_TodosEmpreendimentosSoapIn">
+    <wsdl:part name="en_Cgc" type="s:string" />
+    <wsdl:part name="en_NomeCompleto" type="s:string" />
+    <wsdl:part name="en_NomeAbreviado" type="s:string" />
+    <wsdl:part name="en_CodParceiro" type="s:int" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_TodosEmpreendimentosSoapOut">
+    <wsdl:part name="Util_Rec_TodosEmpreendimentosResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_DadosEmpreendimentoSoapIn">
+    <wsdl:part name="en_CGC" type="s:string" />
+    <wsdl:part name="en_CPF" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_DadosEmpreendimentoSoapOut">
+    <wsdl:part name="Util_Rec_DadosEmpreendimentoResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_DadosEmpreendimentoUFSoapIn">
+    <wsdl:part name="en_CGC" type="s:string" />
+    <wsdl:part name="en_CPF" type="s:string" />
+    <wsdl:part name="en_CodEst" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_DadosEmpreendimentoUFSoapOut">
+    <wsdl:part name="Util_Rec_DadosEmpreendimentoUFResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trans_Ins_CadastroCompletoPJSoapIn">
+    <wsdl:part name="en_parametros" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trans_Ins_CadastroCompletoPJSoapOut">
+    <wsdl:part name="Trans_Ins_CadastroCompletoPJResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trans_Alt_CadastroCompletoPJSoapIn">
+    <wsdl:part name="en_parametros" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trans_Alt_CadastroCompletoPJSoapOut">
+    <wsdl:part name="Trans_Alt_CadastroCompletoPJResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_CargoParceiroInternetSoapIn">
+    <wsdl:part name="en_Cgc" type="s:string" />
+    <wsdl:part name="en_Cpf" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_CargoParceiroInternetSoapOut">
+    <wsdl:part name="Util_Rec_CargoParceiroInternetResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_VerificaSenhaBloqueadaSoapIn">
+    <wsdl:part name="en_Cpf" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_VerificaSenhaBloqueadaSoapOut">
+    <wsdl:part name="Util_Rec_VerificaSenhaBloqueadaResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trans_Alt_SenhaBloqueadaSoapIn">
+    <wsdl:part name="en_Cpf" type="s:string" />
+    <wsdl:part name="en_SenhaBloqueada" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trans_Alt_SenhaBloqueadaSoapOut">
+    <wsdl:part name="Trans_Alt_SenhaBloqueadaResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_SenhaUsuarioSoapIn">
+    <wsdl:part name="en_Cpf" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_SenhaUsuarioSoapOut">
+    <wsdl:part name="Util_Rec_SenhaUsuarioResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trans_Alt_SenhaUsuarioSoapIn">
+    <wsdl:part name="en_Parametros" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trans_Alt_SenhaUsuarioSoapOut">
+    <wsdl:part name="Trans_Alt_SenhaUsuarioResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_DadosParceiroInternetSoapIn">
+    <wsdl:part name="en_CodParceiro" type="s:int" />
+    <wsdl:part name="en_CodParceiroInternet" type="s:int" />
+    <wsdl:part name="en_Cpf" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_DadosParceiroInternetSoapOut">
+    <wsdl:part name="Util_Rec_DadosParceiroInternetResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_QualificacaoCadastroSoapIn" />
+  <wsdl:message name="Util_Rec_QualificacaoCadastroSoapOut">
+    <wsdl:part name="Util_Rec_QualificacaoCadastroResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_TipoInformacoesSebraeSoapIn" />
+  <wsdl:message name="Util_Rec_TipoInformacoesSebraeSoapOut">
+    <wsdl:part name="Util_Rec_TipoInformacoesSebraeResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_SetorAtvEconomicaSoapIn" />
+  <wsdl:message name="Util_Rec_SetorAtvEconomicaSoapOut">
+    <wsdl:part name="Util_Rec_SetorAtvEconomicaResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_Atividades_ComplementoSoapIn">
+    <wsdl:part name="codSetor" type="s:int" />
+    <wsdl:part name="codAtivEcon" type="s:string" />
+    <wsdl:part name="DescPalavra" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_Atividades_ComplementoSoapOut">
+    <wsdl:part name="Util_Rec_Atividades_ComplementoResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_ConsultarClientesSoapIn">
+    <wsdl:part name="TipoPesquisa" type="s:string" />
+    <wsdl:part name="Cgccpf" type="s:long" />
+    <wsdl:part name="Codparceiro" type="s:int" />
+    <wsdl:part name="NomeCliente" type="s:string" />
+    <wsdl:part name="QualquerParteNome" type="s:int" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_ConsultarClientesSoapOut">
+    <wsdl:part name="Util_Rec_ConsultarClientesResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_DadosPessoaFisicaParceiroSoapIn">
+    <wsdl:part name="CodParceiro" type="s:int" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_DadosPessoaFisicaParceiroSoapOut">
+    <wsdl:part name="Util_Rec_DadosPessoaFisicaParceiroResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trans_Ins_CadastroCompletoPJ_InformalFormalSoapIn">
+    <wsdl:part name="en_parametros" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trans_Ins_CadastroCompletoPJ_InformalFormalSoapOut">
+    <wsdl:part name="Trans_Ins_CadastroCompletoPJ_InformalFormalResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_TiposDeEmpresa_InformalFormalSoapIn" />
+  <wsdl:message name="Util_Rec_TiposDeEmpresa_InformalFormalSoapOut">
+    <wsdl:part name="Util_Rec_TiposDeEmpresa_InformalFormalResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trans_Alt_CadastroCompletoPJ_InformalFormalSoapIn">
+    <wsdl:part name="en_parametros" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trans_Alt_CadastroCompletoPJ_InformalFormalSoapOut">
+    <wsdl:part name="Trans_Alt_CadastroCompletoPJ_InformalFormalResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_DadosEmpreendimentoParceiroSoapIn">
+    <wsdl:part name="CodParceiro" type="s:int" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_DadosEmpreendimentoParceiroSoapOut">
+    <wsdl:part name="Util_Rec_DadosEmpreendimentoParceiroResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_PortePorSetorSoapIn">
+    <wsdl:part name="NumFunc" type="s:int" />
+    <wsdl:part name="CodSetor" type="s:int" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_PortePorSetorSoapOut">
+    <wsdl:part name="Util_Rec_PortePorSetorResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_AtividadesEconomicasPorCodigoSoapIn">
+    <wsdl:part name="Codigo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_AtividadesEconomicasPorCodigoSoapOut">
+    <wsdl:part name="Util_Rec_AtividadesEconomicasPorCodigoResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_TodosMunicipiosSoapIn">
+    <wsdl:part name="CodEstado" type="s:string" />
+    <wsdl:part name="CodMunicipio" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Util_Rec_TodosMunicipiosSoapOut">
+    <wsdl:part name="Util_Rec_TodosMunicipiosResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trans_Ins_AssinarCadastroSoapIn">
+    <wsdl:part name="CodParceiro" type="s:int" />
+    <wsdl:part name="CodSebrae" type="s:int" />
+  </wsdl:message>
+  <wsdl:message name="Trans_Ins_AssinarCadastroSoapOut">
+    <wsdl:part name="Trans_Ins_AssinarCadastroResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:portType name="SiacWEB_CadastroAtenderWSSoap">
+    <wsdl:operation name="Util_Rec_Escolaridade">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera todas as Escolaridades.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_EscolaridadeSoapIn" />
+      <wsdl:output message="tns:Util_Rec_EscolaridadeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_TiposDeEmpresa">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera todos os Tipos de Empresa.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_TiposDeEmpresaSoapIn" />
+      <wsdl:output message="tns:Util_Rec_TiposDeEmpresaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_FaturamentoEmpresa">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera todos os Faturamentos de Empresas.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_FaturamentoEmpresaSoapIn" />
+      <wsdl:output message="tns:Util_Rec_FaturamentoEmpresaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_Cargos">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera todos os Cargos.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_CargosSoapIn" />
+      <wsdl:output message="tns:Util_Rec_CargosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_AtividadesEconomicas">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera as Atividades Econômicas relacionadas à palavra-chave enviada.&lt;br&gt;&lt;br&gt;Parâmetro:&lt;br&gt;&lt;b&gt;en_PalavraChave&lt;/b&gt; - Termo usado na consulta das Atividades Econômicas - Tipo: String de até 30 caracteres. Vazio para recuperar todas as Atividades Econômcas</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_AtividadesEconomicasSoapIn" />
+      <wsdl:output message="tns:Util_Rec_AtividadesEconomicasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_EnderecoPorCEP">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera o Endereço a partir de um CEP.&lt;br&gt;&lt;br&gt;Parâmetro:&lt;br&gt;&lt;b&gt;en_CEP&lt;/b&gt; - CEP do Endereço - VARCHAR(8) contendo apenas números.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_EnderecoPorCEPSoapIn" />
+      <wsdl:output message="tns:Util_Rec_EnderecoPorCEPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_Paises">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera todos os Países.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_PaisesSoapIn" />
+      <wsdl:output message="tns:Util_Rec_PaisesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_Estados">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera todos os Estados.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_EstadosSoapIn" />
+      <wsdl:output message="tns:Util_Rec_EstadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_EstadosPorPais">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera os Estados do País.&lt;br&gt;&lt;br&gt;Parâmetro:&lt;br&gt;&lt;b&gt;en_CodPais&lt;/b&gt; - Código do País - Tipo: Inteiro. Somente para o Brasil (en_CodPais = 31)</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_EstadosPorPaisSoapIn" />
+      <wsdl:output message="tns:Util_Rec_EstadosPorPaisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_MunicipiosPorEstado">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera todos os Municípios do Estado.&lt;br&gt;&lt;br&gt;Parâmetro:&lt;br&gt;&lt;b&gt;en_CodEstado&lt;/b&gt; - Código do Estado - Tipo: Inteiro.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_MunicipiosPorEstadoSoapIn" />
+      <wsdl:output message="tns:Util_Rec_MunicipiosPorEstadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_BairrosPorMunicipio">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera todos os Bairros do Municipio.&lt;br&gt;&lt;br&gt;Parâmetro:&lt;br&gt;&lt;b&gt;en_CodMunicipio&lt;/b&gt; - Código do Município - Tipo: Inteiro.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_BairrosPorMunicipioSoapIn" />
+      <wsdl:output message="tns:Util_Rec_BairrosPorMunicipioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_LogradourosPorBairro">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera todos os Logradouros do Bairro.&lt;br&gt;&lt;br&gt;Parâmetro:&lt;br&gt;&lt;b&gt;en_CodBairro&lt;/b&gt; - Código do Bairro - Tipo: Inteiro.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_LogradourosPorBairroSoapIn" />
+      <wsdl:output message="tns:Util_Rec_LogradourosPorBairroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_TodasPessoasFisicas">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera Pessoas Físicas de acordo com os parâmetros enviados.&lt;br&gt;&lt;br&gt;Parâmetros:&lt;br&gt;&lt;b&gt;en_Cpf&lt;/b&gt; - CPF do Cliente - VARCHAR(15) contendo apenas números - Passar '0' (zero) para anular este parâmetro;&lt;br&gt;&lt;b&gt;en_NomeCompleto&lt;/b&gt; - Nome Completo do Cliente - VARCHAR(120) - Passar espaço em branco para anular este parâmetro;&lt;br&gt;&lt;b&gt;en_CodParceiro&lt;/b&gt; - Código do Parceiro - INTEGER - Passar 0 (zero) para anular este parâmetro;&lt;br&gt;&lt;b&gt;en_NomeAbreviado&lt;/b&gt; - Nome Abreviado do Cliente - VARCHAR(80) - Passar espaço em branco para anular este parâmetro.&lt;br&gt;&lt;br&gt; Obs. Ao menos um parâmetro deve ser informado</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_TodasPessoasFisicasSoapIn" />
+      <wsdl:output message="tns:Util_Rec_TodasPessoasFisicasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_DadosPessoaFisica">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera todos Dados de Pessoa Física.&lt;br&gt;&lt;br&gt;Parâmetro:&lt;br&gt;&lt;b&gt;en_Cpf&lt;/b&gt; - CPF do Cliente - VARCHAR(15) contendo apenas números.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_DadosPessoaFisicaSoapIn" />
+      <wsdl:output message="tns:Util_Rec_DadosPessoaFisicaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Ins_CadastroCompletoPF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Para visualizar a documentação desse método click &lt;a href="HelpOnline/SIACWeb_CadastroAtenderWS_Trans_Ins_CadastroCompletoPF.html" target="_blank"&gt;aqui&lt;/a&gt;. &lt;br&gt;Exemplo: '01230123012|senhaex|Nome exemplo|Abrev. ex|3|27121978|1|rua waldemar de oliveira|51020021|31|18|5406|7315|complemento de exemplo| |emailexemplo@wit.com.br|35647896|32211445|99879856|2|'</wsdl:documentation>
+      <wsdl:input message="tns:Trans_Ins_CadastroCompletoPFSoapIn" />
+      <wsdl:output message="tns:Trans_Ins_CadastroCompletoPFSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Alt_CadastroCompletoPF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Para visualizar a documentação desse método click &lt;a href="HelpOnline/SIACWeb_CadastroAtenderWS_Trans_Alt_CadastroCompletoPF.html" target="_blank"&gt;aqui&lt;/a&gt;. &lt;br&gt;Exemplo: '327838|01230123012|Nome exemplo|Abrev. ex|3|27121978|1|rua waldemar de oliveira|51020021|31|18|5406|7315|complemento de exemplo| |emailexemplo@wit.com.br|35647896|32211445|99879856|2|'</wsdl:documentation>
+      <wsdl:input message="tns:Trans_Alt_CadastroCompletoPFSoapIn" />
+      <wsdl:output message="tns:Trans_Alt_CadastroCompletoPFSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_TodosEmpreendimentos">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera Empreendimentos de acordo com os parâmetros enviados.&lt;br&gt;&lt;br&gt;Parâmetros:&lt;br&gt;&lt;b&gt;en_Cgc&lt;/b&gt; - CNPJ do Empreendimento - VARCHAR(15) contendo apenas números - Passar '0' (zero) para anular este parâmetro;&lt;br&gt;&lt;b&gt;en_NomeCompleto&lt;/b&gt; - Razão Social do Empreendimento - VARCHAR(120) - Passar espaço em branco para anular este parâmetro;&lt;br&gt;&lt;b&gt;en_NomeAbreviado&lt;/b&gt; - Nome Fantasia do Empreendimento - VARCHAR(80) - Passar espaço em branco para anular este parâmetro.&lt;br&gt;&lt;b&gt;en_CodParceiro&lt;/b&gt; - Código do Parceiro - INTEGER - Passar 0 (zero) para anular este parâmetro;&lt;br&gt;&lt;br&gt;Obs. Se o parâmetro en_CodParceiro for informado, qualquer valor informado nos outros parâmetos seram desconsiderados.&lt;br&gt;</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_TodosEmpreendimentosSoapIn" />
+      <wsdl:output message="tns:Util_Rec_TodosEmpreendimentosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_DadosEmpreendimento">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera os Dados de Empreendimento.&lt;br&gt;&lt;br&gt;Parâmetros:&lt;br&gt;&lt;b&gt;en_CGC&lt;/b&gt; - CNPJ do Cliente - VARCHAR(15) contendo apenas números - Passar '0' (zero) para anular este parâmetro;&lt;br&gt;&lt;b&gt;en_Cpf&lt;/b&gt; - CPF do Cliente - VARCHAR(15) contendo apenas números - Passar '0' (zero) para anular este parâmetro.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_DadosEmpreendimentoSoapIn" />
+      <wsdl:output message="tns:Util_Rec_DadosEmpreendimentoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_DadosEmpreendimentoUF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera os Dados de Empreendimento por CNPJ/CPF e CodEst.&lt;br&gt;&lt;br&gt;Parâmetros:&lt;br&gt;&lt;b&gt;en_CGC&lt;/b&gt; - CNPJ do Cliente - VARCHAR(15) contendo apenas números - Passar '0' (zero) para anular este parâmetro;&lt;br&gt;&lt;b&gt;en_Cpf&lt;/b&gt; - CPF do Cliente - VARCHAR(15) contendo apenas números - Passar '0' (zero) para anular este parâmetro;&lt;br&gt;&lt;b&gt;en_CodEst&lt;/b&gt; - Código do estado do Cliente - VARCHAR(2) contendo apenas números - Passar '0' (zero) para anular este parâmetro.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_DadosEmpreendimentoUFSoapIn" />
+      <wsdl:output message="tns:Util_Rec_DadosEmpreendimentoUFSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Ins_CadastroCompletoPJ">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Insere cadastro completo de Empreendimento, e retorna código gerado, ou erro.&lt;br&gt;&lt;br&gt;en_Parametros - String formada por:  &lt;br&gt; &amp;nbsp;&amp;nbsp;&lt;b&gt;CPF&lt;/b&gt; - CPF do usuário - VARCHAR(15) contendo apenas números - campo &lt;b&gt;obrigatório&lt;/b&gt;&lt;br&gt;&lt;b&gt;| Cargo&lt;/b&gt; - Código do Cargo da Pessoa Física - INTEGER - campo &lt;b&gt;obrigatório&lt;/b&gt;. Recuperar a partir de &lt;b&gt;Util_Rec_Cargos&lt;/b&gt;&lt;br&gt;&lt;b&gt;| CgcCpf&lt;/b&gt; - CNPJ do Empreendimento - VARCHAR(15) contendo apenas números - campo &lt;b&gt;opcional&lt;/b&gt; : 0 para Anular.&lt;br&gt;&lt;b&gt;| NomeRazaoSocial&lt;/b&gt; - Razão Social do Empreendimento - VARCHAR(120)  - campo &lt;b&gt;opcional&lt;/b&gt;&lt;br&gt;&lt;b&gt;| NomeAbrevFantasia&lt;/b&gt; - Nome Fantasia do Empreendimento - VARCHAR(80) - campo &lt;b&gt;opcional&lt;/b&gt;&lt;br&gt;&lt;b&gt;| CodigoAtivEconomica&lt;/b&gt; - Código da Atividade Econômica - VARCHAR(9) - campo &lt;b&gt;obrigatório&lt;/b&gt;. Recuperar a partir de &lt;b&gt;Util_Rec_AtividadesEconomicas&lt;/b&gt;&lt;br&gt;&lt;b&gt;| NumFunc&lt;/b&gt; - Número de Pessoas ocupadas - SMALLINT - campo &lt;b&gt;obrigatório&lt;/b&gt;&lt;br&gt;&lt;b&gt;| CodSetor&lt;/b&gt; - Código do setor - SMALLINT - campo &lt;b&gt;opcional&lt;/b&gt;: 0 para Anular.&lt;br&gt;&lt;b&gt;| Faturam&lt;/b&gt; - Faturamento do Empreendimento - NUMERIC de até 18 posições, contendo apenas números - campo &lt;b&gt;opcional&lt;/b&gt;: espaço em branco para anular&lt;br&gt;&lt;b&gt;| DatAbert&lt;/b&gt; - Data de Abertura do Empreendimento - VARCHAR(6) no formato mmaaaa - campo &lt;b&gt;obrigatório&lt;/b&gt;&lt;br&gt;&lt;b&gt;| DatFech&lt;/b&gt; - Data de Fechamento do Empreendimento - VARCHAR(6) no formato mmaaaa - campo &lt;b&gt;opcional&lt;/b&gt;: espaço em branco para anular&lt;br&gt;&lt;b&gt;| CodConst&lt;/b&gt; - Código do Tipo da Empresa - SMALLINT - campo &lt;b&gt;obrigatório&lt;/b&gt;. Recuperar a partir de &lt;b&gt;Util_Rec_TiposDeEmpresa&lt;/b&gt;&lt;br&gt;&lt;b&gt;| DescEndereco&lt;/b&gt; - Descrição do Endereço - VARCHAR(150) - campo &lt;b&gt;obrigatório&lt;/b&gt;: espaço em branco para end.internacional&lt;br&gt;&lt;b&gt;| Cep&lt;/b&gt; - CEP do endereço - VARCHAR(8) contendo apenas números - campo &lt;b&gt;obrigatório&lt;/b&gt;: espaço em branco para end.internacional&lt;br&gt;&lt;b&gt;| Telefone1&lt;/b&gt; - Primeiro Tel. Comercial para comunicação - VARCHAR(60) - campo &lt;b&gt;opcional&lt;/b&gt;: espaço em branco para anular&lt;br&gt;&lt;b&gt;| Telefone2&lt;/b&gt; - Segundo Tel. Comercial para comunicação - VARCHAR(60) - campo &lt;b&gt;opcional&lt;/b&gt;: espaço em branco para anular&lt;br&gt;&lt;b&gt;| CodPais&lt;/b&gt; - Código do País - SMALLINT - campo &lt;b&gt;obrigatório&lt;/b&gt;: 0 para end.internacional. Recuperar a partir de &lt;b&gt;Util_Rec_Paises&lt;/b&gt;&lt;br&gt;&lt;b&gt;| CodEst&lt;/b&gt; - Código do Estado - SMALLINT - campo &lt;b&gt;obrigatório&lt;/b&gt;: 0 para end.internacional. Recuperar a partir de &lt;b&gt;Util_Rec_Estados&lt;/b&gt;&lt;br&gt;&lt;b&gt;| CodCid&lt;/b&gt; - Código da Cidade - INTEGER - campo &lt;b&gt;obrigatório&lt;/b&gt;: 0 para end.internacional. Recuperar a partir de &lt;b&gt;Util_Rec_MunicipiosPorEstado&lt;/b&gt;&lt;br&gt;&lt;b&gt;| CodBairro&lt;/b&gt; - Código do Bairro - INTEGER - campo &lt;b&gt;obrigatório&lt;/b&gt;: 0 para end.internacional. Recuperar a partir de &lt;b&gt;Util_Rec_BairrosPorMunicipio&lt;/b&gt;&lt;br&gt;&lt;b&gt;| Complemento&lt;/b&gt; - Complemento do endereço - VARCHAR(70) - campo &lt;b&gt;obrigatório&lt;/b&gt;: espaço em branco para end.internacional&lt;br&gt;&lt;b&gt;| EndInternacional |&lt;/b&gt; - Endereço Internacional - VARCHAR(250) - campo &lt;b&gt;opcional&lt;/b&gt;: espaço em branco para anular&lt;br&gt;&lt;br&gt;Exemplo: '12341234321|2|012453689754215|empresa de exemplo|emp. exemplo|015132201|23|3|23423|122000| |3|endereço exemplo|51020021| | |31|18|324|2154| | |'</wsdl:documentation>
+      <wsdl:input message="tns:Trans_Ins_CadastroCompletoPJSoapIn" />
+      <wsdl:output message="tns:Trans_Ins_CadastroCompletoPJSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Alt_CadastroCompletoPJ">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Altera cadastro completo de Empreendimento, e retorna código do Empreendimento, ou erro.&lt;br&gt;&lt;br&gt;en_Parametros - String formada por:  &lt;br&gt; &amp;nbsp;&amp;nbsp;&lt;b&gt;CodParceiro&lt;/b&gt; - Codigo do Parceiro Pessoa Jurídica - INTEGER - campo &lt;b&gt;obrigatório&lt;/b&gt;&lt;br&gt;&lt;b&gt;| CPF&lt;/b&gt; - CPF do usuário - VARCHAR(15) contendo apenas números - campo &lt;b&gt;obrigatório&lt;/b&gt;&lt;br&gt;&lt;b&gt;| Cargo&lt;/b&gt; - Código do Cargo da Pessoa Física - INTEGER - campo &lt;b&gt;obrigatório&lt;/b&gt;. Recuperar a partir de &lt;b&gt;Util_Rec_Cargos&lt;/b&gt;&lt;br&gt;&lt;b&gt;| CgcCpf&lt;/b&gt; - CNPJ do Empreendimento - VARCHAR(15) contendo apenas números - campo &lt;b&gt;opcional&lt;/b&gt;&lt;br&gt;&lt;b&gt;| NomeRazaoSocial&lt;/b&gt; - Razão Social do Empreendimento - VARCHAR(120)  - campo &lt;b&gt;opcional&lt;/b&gt;&lt;br&gt;&lt;b&gt;| NomeAbrevFantasia&lt;/b&gt; - Nome Fantasia do Empreendimento - VARCHAR(80) - campo &lt;b&gt;opcional&lt;/b&gt;&lt;br&gt;&lt;b&gt;| CodigoAtivEconomica&lt;/b&gt; - Código da Atividade Econômica - VARCHAR(9) - campo &lt;b&gt;obrigatório&lt;/b&gt;. Recuperar a partir de &lt;b&gt;Util_Rec_AtividadesEconomicas&lt;/b&gt;&lt;br&gt;&lt;b&gt;| NumFunc&lt;/b&gt; - Número de funcionários da Empresa - SMALLINT - campo &lt;b&gt;obrigatório&lt;/b&gt;&lt;br&gt;&lt;b&gt;| CodSetor&lt;/b&gt; - Código do setor - SMALLINT - campo &lt;b&gt;opcional&lt;/b&gt;: 0 para Anular.&lt;br&gt;&lt;b&gt;| Faturam&lt;/b&gt; - Faturamento do Empreendimento - NUMERIC de até 18 posições, contendo apenas números - campo &lt;b&gt;opcional&lt;/b&gt;:espaço em branco para anular&lt;br&gt;&lt;b&gt;| DatAbert&lt;/b&gt; - Data de Abertura do Empreendimento - VARCHAR(6) no formato mmaaaa - campo &lt;b&gt;obrigatório&lt;/b&gt;&lt;br&gt;&lt;b&gt;| DatFech&lt;/b&gt; - Data de Fechamento do Empreendimento - VARCHAR(6) no formato mmaaaa - campo &lt;b&gt;opcional&lt;/b&gt;: espaço em branco para anular&lt;br&gt;&lt;b&gt;| CodConst&lt;/b&gt; - Código do Tipo da Empresa - SMALLINT - campo &lt;b&gt;obrigatório&lt;/b&gt;. Recuperar a partir de &lt;b&gt;Util_Rec_TiposDeEmpresa&lt;/b&gt;&lt;br&gt;&lt;b&gt;| DescEndereco&lt;/b&gt; - Descrição do Endereço - VARCHAR(150) - campo &lt;b&gt;obrigatório&lt;/b&gt;: espaço em branco para end.internacional&lt;br&gt;&lt;b&gt;| Cep&lt;/b&gt; - CEP do endereço - VARCHAR(8) contendo apenas números - campo &lt;b&gt;obrigatório&lt;/b&gt;: espaço em branco para end.internacional&lt;br&gt;&lt;b&gt;| Telefone1&lt;/b&gt; - Primeiro Tel. Comercial para comunicação - VARCHAR(60) - campo &lt;b&gt;opcional&lt;/b&gt;: espaço em branco para anular&lt;br&gt;&lt;b&gt;| Telefone2&lt;/b&gt; - Segundo Tel. Comercial para comunicação - VARCHAR(60) - campo &lt;b&gt;opcional&lt;/b&gt;: espaço em branco para anular&lt;br&gt;&lt;b&gt;| CodPais&lt;/b&gt; - Código do País - SMALLINT - campo &lt;b&gt;obrigatório&lt;/b&gt;: 0 para end.internacional. Recuperar a partir de &lt;b&gt;Util_Rec_Paises&lt;/b&gt;&lt;br&gt;&lt;b&gt;| CodEst&lt;/b&gt; - Código do Estado - SMALLINT - campo &lt;b&gt;obrigatório&lt;/b&gt;: 0 para end.internacional. Recuperar a partir de &lt;b&gt;Util_Rec_Estados&lt;/b&gt;&lt;br&gt;&lt;b&gt;| CodCid&lt;/b&gt; - Código da Cidade - INTEGER - campo &lt;b&gt;obrigatório&lt;/b&gt;: 0 para end.internacional. Recuperar a partir de &lt;b&gt;Util_Rec_MunicipiosPorEstado&lt;/b&gt;&lt;br&gt;&lt;b&gt;| CodBairro&lt;/b&gt; - Código do Bairro - INTEGER - campo &lt;b&gt;obrigatório&lt;/b&gt;: 0 para end.internacional. Recuperar a partir de &lt;b&gt;Util_Rec_BairrosPorMunicipio&lt;/b&gt;&lt;br&gt;&lt;b&gt;| Complemento&lt;/b&gt; - Complemento do endereço - VARCHAR(70) - campo &lt;b&gt;obrigatório&lt;/b&gt;: espaço em branco para end.internacional&lt;br&gt;&lt;b&gt;| EndInternacional |&lt;/b&gt; - Endereço Internacional - VARCHAR(250) - campo &lt;b&gt;opcional&lt;/b&gt;: espaço em branco para anular&lt;br&gt;&lt;br&gt;Exemplo: '26744919|12341234321|2|445454545|empresa de exemplo ALT|emp. de exemplo ALT|015132201|33|3|20000|122000| |3|endereço exemplo|51020021| | |31|18|215|343| | |'</wsdl:documentation>
+      <wsdl:input message="tns:Trans_Alt_CadastroCompletoPJSoapIn" />
+      <wsdl:output message="tns:Trans_Alt_CadastroCompletoPJSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_CargoParceiroInternet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera o Cargo do parceiro Internet.&lt;br&gt;&lt;br&gt;Parâmetros:&lt;br&gt;&lt;b&gt;en_Cgc&lt;/b&gt; - CNPJ do Cliente - VARCHAR(15) contendo apenas números - &lt;b&gt;obrigatório&lt;/b&gt;;&lt;br&gt;&lt;b&gt;en_Cpf&lt;/b&gt; - CPF do Cliente - VARCHAR(15) contendo apenas números - &lt;b&gt;obrigatório&lt;/b&gt;.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_CargoParceiroInternetSoapIn" />
+      <wsdl:output message="tns:Util_Rec_CargoParceiroInternetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_VerificaSenhaBloqueada">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Verifica se a Senha do usuário está bloqueada.&lt;br&gt;&lt;br&gt;Parâmetro:&lt;br&gt;&lt;b&gt;en_Cpf&lt;/b&gt; - CPF do Cliente - VARCHAR(15) contendo apenas números .</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_VerificaSenhaBloqueadaSoapIn" />
+      <wsdl:output message="tns:Util_Rec_VerificaSenhaBloqueadaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Alt_SenhaBloqueada">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Bloqueia ou desbloqueia senha de acesso.&lt;br&gt;&lt;br&gt;Parâmetros:&lt;br&gt;&lt;b&gt;en_Cpf&lt;/b&gt; - CPF do Cliente - VARCHAR(15) contendo apenas números ;&lt;br&gt;&lt;b&gt;en_SenhaBloqueada&lt;/b&gt; - 'S': Bloqueada, 'N': Não-bloqueadaa .</wsdl:documentation>
+      <wsdl:input message="tns:Trans_Alt_SenhaBloqueadaSoapIn" />
+      <wsdl:output message="tns:Trans_Alt_SenhaBloqueadaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_SenhaUsuario">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera a Senha de um usuário.&lt;br&gt;&lt;br&gt;Parâmetro:&lt;br&gt;&lt;b&gt;en_Cpf&lt;/b&gt; - CPF do Cliente - VARCHAR(15) contendo apenas números.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_SenhaUsuarioSoapIn" />
+      <wsdl:output message="tns:Util_Rec_SenhaUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Alt_SenhaUsuario">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Altera a Senha de um usuário.&lt;br&gt;&lt;br&gt;en_Parametros - String formada por:&lt;br&gt;&lt;b&gt;&amp;nbsp;&amp;nbsp;CPF&lt;/b&gt; - CPF do usuário - VARCHAR(15) contendo apenas números - campo &lt;b&gt;obrigatório&lt;/b&gt;&lt;br&gt;&lt;b&gt;| Senha |&lt;/b&gt; - Senha de acesso ao Portal - VARCHAR(20) - campo &lt;b&gt;obrigatório&lt;/b&gt;&lt;br&gt;&lt;br&gt;Exemplo: 03568974235|$senhaex$|</wsdl:documentation>
+      <wsdl:input message="tns:Trans_Alt_SenhaUsuarioSoapIn" />
+      <wsdl:output message="tns:Trans_Alt_SenhaUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_DadosParceiroInternet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera dados do Parceiro Internet.&lt;br&gt;&lt;br&gt;Parâmetros:&lt;br&gt;&lt;b&gt;en_CodParceiro&lt;/b&gt; - Identificador CodParceiro - Inteiro - Passar 0 (zero) para anular este parâmetro; &lt;br&gt;&lt;b&gt;en_CodParceiroInternet&lt;/b&gt; - Identificador CodParceiroInternet - Inteiro - Passar 0 (zero) para anular este parâmetro; &lt;br&gt;&lt;b&gt;en_Cpf&lt;/b&gt; - CPF do Cliente - VARCHAR(15) contendo apenas números - Passar '0' (zero entre aspas) para anular este parâmetro.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_DadosParceiroInternetSoapIn" />
+      <wsdl:output message="tns:Util_Rec_DadosParceiroInternetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_QualificacaoCadastro">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Para visualizar a documentação desse método click &lt;a href="HelpOnline/SIACWeb_CadastroAtenderWS_Util_Rec_QualificacaoCadastro.html" target="_blank"&gt;aqui&lt;/a&gt;.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_QualificacaoCadastroSoapIn" />
+      <wsdl:output message="tns:Util_Rec_QualificacaoCadastroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_TipoInformacoesSebrae">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Para visualizar a documentação desse método click &lt;a href="HelpOnline/SIACWeb_CadastroAtenderWS_Util_Rec_TipoInformacoesSebrae.html" target="_blank"&gt;aqui&lt;/a&gt;.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_TipoInformacoesSebraeSoapIn" />
+      <wsdl:output message="tns:Util_Rec_TipoInformacoesSebraeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_SetorAtvEconomica">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Para visualizar a documentação desse método click &lt;a href="HelpOnline/SIACWeb_CadastroAtenderWS_Util_Rec_SetorAtvEconomica.html" target="_blank"&gt;aqui&lt;/a&gt;.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_SetorAtvEconomicaSoapIn" />
+      <wsdl:output message="tns:Util_Rec_SetorAtvEconomicaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_Atividades_Complemento">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Para visualizar a documentação desse método click &lt;a href="HelpOnline/SIACWeb_CadastroAtenderWS_Util_Rec_Atividades_Complemento.html" target="_blank"&gt;aqui&lt;/a&gt;.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_Atividades_ComplementoSoapIn" />
+      <wsdl:output message="tns:Util_Rec_Atividades_ComplementoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_ConsultarClientes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Para visualizar a documentação desse método click &lt;a href="HelpOnline/SIACWeb_CadastroAtenderWS_Util_Rec_ConsultarClientes.html" target="_blank"&gt;aqui&lt;/a&gt;.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_ConsultarClientesSoapIn" />
+      <wsdl:output message="tns:Util_Rec_ConsultarClientesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_DadosPessoaFisicaParceiro">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Para visualizar a documentação desse método click &lt;a href="HelpOnline/SIACWeb_CadastroAtenderWS_Util_Rec_DadosPessoaFisicaParceiro.html" target="_blank"&gt;aqui&lt;/a&gt;.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_DadosPessoaFisicaParceiroSoapIn" />
+      <wsdl:output message="tns:Util_Rec_DadosPessoaFisicaParceiroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Ins_CadastroCompletoPJ_InformalFormal">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Para visualizar a documentação desse método click &lt;a href="HelpOnline/SIACWeb_CadastroAtenderWS_Trans_Ins_CadastroCompletoPJ_InformalFormal.html" target="_blank"&gt;aqui&lt;/a&gt;. &lt;br&gt;Exemplo: '02012345678|26743091|1|52242350000168|empresa de exemplo|emp. exemplo|011592001|3|2|2|012000| |11|1|endereço exemplo, 111|50775595|1133333324| |31|18|5406|7334|45| |exemplo@teste.com.br|'</wsdl:documentation>
+      <wsdl:input message="tns:Trans_Ins_CadastroCompletoPJ_InformalFormalSoapIn" />
+      <wsdl:output message="tns:Trans_Ins_CadastroCompletoPJ_InformalFormalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_TiposDeEmpresa_InformalFormal">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Para visualizar a documentação desse método click &lt;a href="HelpOnline/SIACWeb_CadastroAtenderWS_Util_Rec_TiposDeEmpresa_InformalFormal.html" target="_blank"&gt;aqui&lt;/a&gt;.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_TiposDeEmpresa_InformalFormalSoapIn" />
+      <wsdl:output message="tns:Util_Rec_TiposDeEmpresa_InformalFormalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Alt_CadastroCompletoPJ_InformalFormal">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Para visualizar a documentação desse método click &lt;a href="HelpOnline/SIACWeb_CadastroAtenderWS_Trans_Alt_CadastroCompletoPJ_InformalFormal.html" target="_blank"&gt;aqui&lt;/a&gt;. &lt;br&gt;Exemplo: '26744919|12341234321|2612222|2|44545454545|empresa de exemplo ALT|emp. de exemplo ALT|015132201|33|3|20000|122000| |3|1|endereço exemplo|51020021| | |31|18|215|343| | |exemplo@teste.com.br|'</wsdl:documentation>
+      <wsdl:input message="tns:Trans_Alt_CadastroCompletoPJ_InformalFormalSoapIn" />
+      <wsdl:output message="tns:Trans_Alt_CadastroCompletoPJ_InformalFormalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_DadosEmpreendimentoParceiro">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Para visualizar a documentação desse método click &lt;a href="HelpOnline/SIACWeb_CadastroAtenderWS_Util_Rec_DadosEmpreendimentoParceiro.html" target="_blank"&gt;aqui&lt;/a&gt;.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_DadosEmpreendimentoParceiroSoapIn" />
+      <wsdl:output message="tns:Util_Rec_DadosEmpreendimentoParceiroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_PortePorSetor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Para visualizar a documentação desse método click &lt;a href="HelpOnline/SIACWeb_CadastroAtenderWS_Util_Rec_PortePorSetor.html" target="_blank"&gt;aqui&lt;/a&gt;.</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_PortePorSetorSoapIn" />
+      <wsdl:output message="tns:Util_Rec_PortePorSetorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_AtividadesEconomicasPorCodigo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera as Atividades Econômicas Por Código.&lt;br&gt;&lt;br&gt;Parâmetros:&lt;br&gt;&lt;b&gt;Codigo&lt;/b&gt; - Código(CodClass+CodAtivEcon+CodCnae) - VARCHAR(9) contendo apenas números - Passar '0' (zero) para anular este parâmetro;&lt;br&gt;&lt;br&gt;Obs. Se for passado 0 (zero) no parâmetro de entrada, retorna todas as atividades econômicas.&lt;br&gt;</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_AtividadesEconomicasPorCodigoSoapIn" />
+      <wsdl:output message="tns:Util_Rec_AtividadesEconomicasPorCodigoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_TodosMunicipios">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera todos os Municípios.&lt;br&gt;&lt;br&gt;Parâmetros:&lt;br&gt;&lt;b&gt;CodEstado&lt;/b&gt; - Código do Estado - INTEGER - Passar 0 (zero) para anular este parâmetro;&lt;br&gt;&lt;b&gt;CodMunicipio&lt;/b&gt; - Código do Município - INTEGER - Passar 0 (zero) para anular este parâmetro;&lt;br&gt;&lt;br&gt;Obs. Quando passar zero no Município virão todos os municípios daquele estado. Quando passar zero para os dois campos &lt;br&gt; virão todos os municípios do Brasil. &lt;br&gt;</wsdl:documentation>
+      <wsdl:input message="tns:Util_Rec_TodosMunicipiosSoapIn" />
+      <wsdl:output message="tns:Util_Rec_TodosMunicipiosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Ins_AssinarCadastro">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Para visualizar a documentação desse método click &lt;a href="HelpOnline/SIACWeb_CadastroAtenderWS_Trans_Ins_AssinarCadastro.html" target="_blank"&gt;aqui&lt;/a&gt;.</wsdl:documentation>
+      <wsdl:input message="tns:Trans_Ins_AssinarCadastroSoapIn" />
+      <wsdl:output message="tns:Trans_Ins_AssinarCadastroSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SiacWEB_CadastroAtenderWSSoap" type="tns:SiacWEB_CadastroAtenderWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="Util_Rec_Escolaridade">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_Escolaridade" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_TiposDeEmpresa">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_TiposDeEmpresa" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_FaturamentoEmpresa">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_FaturamentoEmpresa" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_Cargos">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_Cargos" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_AtividadesEconomicas">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_AtividadesEconomicas" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_EnderecoPorCEP">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_EnderecoPorCEP" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_Paises">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_Paises" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_Estados">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_Estados" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_EstadosPorPais">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_EstadosPorPais" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_MunicipiosPorEstado">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_MunicipiosPorEstado" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_BairrosPorMunicipio">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_BairrosPorMunicipio" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_LogradourosPorBairro">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_LogradourosPorBairro" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_TodasPessoasFisicas">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_TodasPessoasFisicas" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_DadosPessoaFisica">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_DadosPessoaFisica" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Ins_CadastroCompletoPF">
+      <soap:operation soapAction="CadastroAtender/Trans_Ins_CadastroCompletoPF" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Alt_CadastroCompletoPF">
+      <soap:operation soapAction="CadastroAtender/Trans_Alt_CadastroCompletoPF" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_TodosEmpreendimentos">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_TodosEmpreendimentos" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_DadosEmpreendimento">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_DadosEmpreendimento" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_DadosEmpreendimentoUF">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_DadosEmpreendimentoUF" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Ins_CadastroCompletoPJ">
+      <soap:operation soapAction="CadastroAtender/Trans_Ins_CadastroCompletoPJ" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Alt_CadastroCompletoPJ">
+      <soap:operation soapAction="CadastroAtender/Trans_Alt_CadastroCompletoPJ" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_CargoParceiroInternet">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_CargoParceiroInternet" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_VerificaSenhaBloqueada">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_VerificaSenhaBloqueada" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Alt_SenhaBloqueada">
+      <soap:operation soapAction="CadastroAtender/Trans_Alt_SenhaBloqueada" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_SenhaUsuario">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_SenhaUsuario" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Alt_SenhaUsuario">
+      <soap:operation soapAction="CadastroAtender/Trans_Alt_SenhaUsuario" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_DadosParceiroInternet">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_DadosParceiroInternet" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_QualificacaoCadastro">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_QualificacaoCadastro" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_TipoInformacoesSebrae">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_TipoInformacoesSebrae" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_SetorAtvEconomica">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_SetorAtvEconomica" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_Atividades_Complemento">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_Atividades_Complemento" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_ConsultarClientes">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_ConsultarClientes" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_DadosPessoaFisicaParceiro">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_DadosPessoaFisicaParceiro" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Ins_CadastroCompletoPJ_InformalFormal">
+      <soap:operation soapAction="CadastroAtender/Trans_Ins_CadastroCompletoPJ_InformalFormal" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_TiposDeEmpresa_InformalFormal">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_TiposDeEmpresa_InformalFormal" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Alt_CadastroCompletoPJ_InformalFormal">
+      <soap:operation soapAction="CadastroAtender/Trans_Alt_CadastroCompletoPJ_InformalFormal" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_DadosEmpreendimentoParceiro">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_DadosEmpreendimentoParceiro" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_PortePorSetor">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_PortePorSetor" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_AtividadesEconomicasPorCodigo">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_AtividadesEconomicasPorCodigo" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_TodosMunicipios">
+      <soap:operation soapAction="CadastroAtender/Util_Rec_TodosMunicipios" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Ins_AssinarCadastro">
+      <soap:operation soapAction="CadastroAtender/Trans_Ins_AssinarCadastro" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="CadastroAtender" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SiacWEB_CadastroAtenderWSSoap12" type="tns:SiacWEB_CadastroAtenderWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="Util_Rec_Escolaridade">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_Escolaridade" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_TiposDeEmpresa">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_TiposDeEmpresa" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_FaturamentoEmpresa">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_FaturamentoEmpresa" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_Cargos">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_Cargos" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_AtividadesEconomicas">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_AtividadesEconomicas" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_EnderecoPorCEP">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_EnderecoPorCEP" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_Paises">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_Paises" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_Estados">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_Estados" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_EstadosPorPais">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_EstadosPorPais" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_MunicipiosPorEstado">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_MunicipiosPorEstado" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_BairrosPorMunicipio">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_BairrosPorMunicipio" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_LogradourosPorBairro">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_LogradourosPorBairro" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_TodasPessoasFisicas">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_TodasPessoasFisicas" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_DadosPessoaFisica">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_DadosPessoaFisica" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Ins_CadastroCompletoPF">
+      <soap12:operation soapAction="CadastroAtender/Trans_Ins_CadastroCompletoPF" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Alt_CadastroCompletoPF">
+      <soap12:operation soapAction="CadastroAtender/Trans_Alt_CadastroCompletoPF" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_TodosEmpreendimentos">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_TodosEmpreendimentos" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_DadosEmpreendimento">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_DadosEmpreendimento" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_DadosEmpreendimentoUF">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_DadosEmpreendimentoUF" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Ins_CadastroCompletoPJ">
+      <soap12:operation soapAction="CadastroAtender/Trans_Ins_CadastroCompletoPJ" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Alt_CadastroCompletoPJ">
+      <soap12:operation soapAction="CadastroAtender/Trans_Alt_CadastroCompletoPJ" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_CargoParceiroInternet">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_CargoParceiroInternet" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_VerificaSenhaBloqueada">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_VerificaSenhaBloqueada" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Alt_SenhaBloqueada">
+      <soap12:operation soapAction="CadastroAtender/Trans_Alt_SenhaBloqueada" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_SenhaUsuario">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_SenhaUsuario" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Alt_SenhaUsuario">
+      <soap12:operation soapAction="CadastroAtender/Trans_Alt_SenhaUsuario" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_DadosParceiroInternet">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_DadosParceiroInternet" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_QualificacaoCadastro">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_QualificacaoCadastro" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_TipoInformacoesSebrae">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_TipoInformacoesSebrae" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_SetorAtvEconomica">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_SetorAtvEconomica" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_Atividades_Complemento">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_Atividades_Complemento" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_ConsultarClientes">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_ConsultarClientes" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_DadosPessoaFisicaParceiro">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_DadosPessoaFisicaParceiro" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Ins_CadastroCompletoPJ_InformalFormal">
+      <soap12:operation soapAction="CadastroAtender/Trans_Ins_CadastroCompletoPJ_InformalFormal" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_TiposDeEmpresa_InformalFormal">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_TiposDeEmpresa_InformalFormal" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Alt_CadastroCompletoPJ_InformalFormal">
+      <soap12:operation soapAction="CadastroAtender/Trans_Alt_CadastroCompletoPJ_InformalFormal" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_DadosEmpreendimentoParceiro">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_DadosEmpreendimentoParceiro" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_PortePorSetor">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_PortePorSetor" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_AtividadesEconomicasPorCodigo">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_AtividadesEconomicasPorCodigo" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Util_Rec_TodosMunicipios">
+      <soap12:operation soapAction="CadastroAtender/Util_Rec_TodosMunicipios" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trans_Ins_AssinarCadastro">
+      <soap12:operation soapAction="CadastroAtender/Trans_Ins_AssinarCadastro" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="CadastroAtender" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SiacWEB_CadastroAtenderWS">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;strong&gt;&lt;h3&gt;Regras de Negócio Gerais:&lt;/h3&gt;&lt;/strong&gt;
+A especificação a seguir define funções que serão disponibilizadas pelo SIACWEB para utilização
+de outros sistemas, como SGE, SIGEOR, etc... que necessitem acessar diretamente a base do SIAC para
+registro de informações relacionadas ao cadastro de público alvo.
+&lt;br /&gt;
+&lt;strong&gt;&lt;h3&gt;Padrões Gerais:&lt;/h3&gt;&lt;/strong&gt;
+Os retornos destes métodos serão sempre um documento XML válido (string).
+&lt;br /&gt;
+O documento XML deve utilizar o padrão RPC-Style (Remote Procedure Call) e ser estruturado
+com o modelo de referenciamento simples.
+&lt;br /&gt;
+Todas as tags devem ser sempre retornadas mesmo que vazias.&lt;br /&gt;
+Os métodos transacionais antigos continuarão a utilizar PIPE para não causar impacto nasaplicações que os utilizam atualmente. Os métodos novos poderão ser implementados sem utilização do PIPE&lt;br /&gt;
+As datas serão sempre passadas em formato DDMMYYYY.&lt;br /&gt;
+Para anular um parâmetro numérico deve-se passar 0 (zero) para fazer o mesmo num parâmetrostring deve-se passar uma string vazia.</wsdl:documentation>
+    <wsdl:port name="SiacWEB_CadastroAtenderWSSoap" binding="tns:SiacWEB_CadastroAtenderWSSoap">
+      <soap:address location="http://ws.sebrae.com.br/siacwebportal/WebServices/siacweb_cadastroatenderws.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SiacWEB_CadastroAtenderWSSoap12" binding="tns:SiacWEB_CadastroAtenderWSSoap12">
+      <soap12:address location="http://ws.sebrae.com.br/siacwebportal/WebServices/siacweb_cadastroatenderws.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

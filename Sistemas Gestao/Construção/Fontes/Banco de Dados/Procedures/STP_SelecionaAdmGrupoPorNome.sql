@@ -1,0 +1,29 @@
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[STP_SelecionaAdmGrupoPorNome]
+(
+ @sNome VARCHAR(200)
+)
+As    
+BEGIN     
+
+SET NOCOUNT ON  
+
+  SELECT
+		CDA_GRUPO,
+		TX_GRUPO,
+		TX_DESCRICAO,
+		CEA_PROGRAMA
+   FROM TBL_ADM_GRUPO
+  WHERE TX_GRUPO like '%' + @sNome + '%';		
+  
+RETURN  
+
+END  
+    
+--
+
+

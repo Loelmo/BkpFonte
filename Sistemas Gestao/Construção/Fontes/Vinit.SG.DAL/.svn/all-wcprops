@@ -1,0 +1,359 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/FNQ.SG/!svn/ver/246/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL
+END
+DalCargo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalCargo.cs
+END
+DalTurmaQuestionario.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalTurmaQuestionario.cs
+END
+DalGrupo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalGrupo.cs
+END
+DalQuestionarioPontuacao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalQuestionarioPontuacao.cs
+END
+DalSetor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalSetor.cs
+END
+DalAtendimentoSistema.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalAtendimentoSistema.cs
+END
+DalPlanoAcao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalPlanoAcao.cs
+END
+DalCategoria.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/FNQ.SG/!svn/ver/140/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalCategoria.cs
+END
+DalEscritorioRegional.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalEscritorioRegional.cs
+END
+DalNoticiaGrupo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalNoticiaGrupo.cs
+END
+DalLogAcao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FNQ.SG/!svn/ver/39/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalLogAcao.cs
+END
+DalContatoFaixaEtaria.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalContatoFaixaEtaria.cs
+END
+DalPerguntaResposta.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FNQ.SG/!svn/ver/194/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalPerguntaResposta.cs
+END
+DalAdmFuncionalidadeRelGrupo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalAdmFuncionalidadeRelGrupo.cs
+END
+DalAtendimento.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/FNQ.SG/!svn/ver/165/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalAtendimento.cs
+END
+DalAdmUsuario.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FNQ.SG/!svn/ver/167/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalAdmUsuario.cs
+END
+DalCidade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FNQ.SG/!svn/ver/166/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalCidade.cs
+END
+DalRelatorioNumeroParticipantes.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FNQ.SG/!svn/ver/207/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalRelatorioNumeroParticipantes.cs
+END
+DalEmpresaCadastro.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FNQ.SG/!svn/ver/238/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalEmpresaCadastro.cs
+END
+DalInscricoesEmpresa.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalInscricoesEmpresa.cs
+END
+DalBairro.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FNQ.SG/!svn/ver/166/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalBairro.cs
+END
+DalAuxiliar.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalAuxiliar.cs
+END
+DalQuestionarioEmpresaResposta.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/FNQ.SG/!svn/ver/47/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalQuestionarioEmpresaResposta.cs
+END
+DalCriterio.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalCriterio.cs
+END
+DalRelatorioRAA.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/FNQ.SG/!svn/ver/80/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalRelatorioRAA.cs
+END
+DalPergunta.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/FNQ.SG/!svn/ver/194/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalPergunta.cs
+END
+DalFaturamento.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalFaturamento.cs
+END
+DalNoticia.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalNoticia.cs
+END
+DalAdmFuncionalidade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalAdmFuncionalidade.cs
+END
+DalTipoEmpresa.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/FNQ.SG/!svn/ver/137/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalTipoEmpresa.cs
+END
+DalRanking.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalRanking.cs
+END
+DalEtapa.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/FNQ.SG/!svn/ver/72/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalEtapa.cs
+END
+DalQuestionarioEmpresa.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FNQ.SG/!svn/ver/178/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalQuestionarioEmpresa.cs
+END
+DalCidadeRelEscritorioRegional.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/FNQ.SG/!svn/ver/63/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalCidadeRelEscritorioRegional.cs
+END
+DalAdmUsuarioRelGrupoUsuario.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalAdmUsuarioRelGrupoUsuario.cs
+END
+DalArquivoGrupo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalArquivoGrupo.cs
+END
+DalAtendimentoTipo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalAtendimentoTipo.cs
+END
+DalTurmaEmpresaSatisfacao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalTurmaEmpresaSatisfacao.cs
+END
+DalFuncionalidade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalFuncionalidade.cs
+END
+DalContatoNivelEscolaridade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalContatoNivelEscolaridade.cs
+END
+DalTurmaEmpresa.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/FNQ.SG/!svn/ver/200/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalTurmaEmpresa.cs
+END
+DalEstadoRegiao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalEstadoRegiao.cs
+END
+DalAtividadeEconomica.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalAtividadeEconomica.cs
+END
+DalDesempenhoGlobal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FNQ.SG/!svn/ver/171/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalDesempenhoGlobal.cs
+END
+DalGrupoEmpresa.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalGrupoEmpresa.cs
+END
+DalRelatorioRanking.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FNQ.SG/!svn/ver/246/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalRelatorioRanking.cs
+END
+Vinit.SG.DAL.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FNQ.SG/!svn/ver/171/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/Vinit.SG.DAL.csproj
+END
+DalAtendimentoStatus.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalAtendimentoStatus.cs
+END
+DalTurmaEmpresaArquivo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalTurmaEmpresaArquivo.cs
+END
+DalAdmGrupo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/FNQ.SG/!svn/ver/207/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalAdmGrupo.cs
+END
+DalEstado.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FNQ.SG/!svn/ver/166/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalEstado.cs
+END
+DalQuestionario.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalQuestionario.cs
+END
+DalQuestionarioEmpresaAvaliador.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FNQ.SG/!svn/ver/178/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalQuestionarioEmpresaAvaliador.cs
+END
+DalEtapaResumo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalEtapaResumo.cs
+END
+DalProgramaEmpresa.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalProgramaEmpresa.cs
+END
+DalArquivo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalArquivo.cs
+END
+DalTipoEtapa.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/FNQ.SG/!svn/ver/4/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalTipoEtapa.cs
+END
+DalTurma.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FNQ.SG/!svn/ver/178/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalTurma.cs
+END
+DalAdmGrupoRelUsuario.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/FNQ.SG/!svn/ver/184/Constru%C3%A7%C3%A3o/Fontes/Vinit.SG.DAL/DalAdmGrupoRelUsuario.cs
+END

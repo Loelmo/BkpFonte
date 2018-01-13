@@ -1,0 +1,117 @@
+<mockup version="1.0" skin="sketch" measuredW="1138" measuredH="632" mockupW="857" mockupH="600">
+  <controls>
+    <control controlID="150" controlTypeID="com.balsamiq.mockups::Image" x="343" y="105" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../Projetos/FNQ/Sistema%2520de%2520Gest%E3o/Inicia%E7%E3o/Wireframes/Seguranca/seguran%E7a/img_top_esq.jpg</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="151" controlTypeID="__group__" x="281" y="32" w="857" h="600" measuredW="857" measuredH="600" zOrder="1" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="0" y="0" w="856" h="600" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="151">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="15" y="514" w="826" h="49" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="151">
+          <controlProperties>
+            <src>../Projetos/FNQ/Sistema%2520de%2520Gest%E3o/Inicia%E7%E3o/Wireframes/Seguranca/patrocinios2.png</src>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::HRule" x="0" y="200" w="857" h="5" measuredW="100" measuredH="5" zOrder="2" locked="false" isInGroup="151"/>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::HRule" x="0" y="180" w="857" h="5" measuredW="100" measuredH="5" zOrder="3" locked="false" isInGroup="151"/>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::SubTitle" x="391" y="101" w="320" h="46" measuredW="256" measuredH="46" zOrder="4" locked="false" isInGroup="151">
+          <controlProperties>
+            <size>28</size>
+            <text>Sistema%20PEG%202011</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="152" controlTypeID="__group__" x="315" y="245" w="337" h="160" measuredW="337" measuredH="160" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>teste</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="337" h="160" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="152">
+          <controlProperties>
+            <borderStyle>square</borderStyle>
+          </controlProperties>
+        </control>
+        <control controlID="13" controlTypeID="com.balsamiq.mockups::TextInput" x="120" y="12" w="202" h="-1" measuredW="79" measuredH="29" zOrder="1" locked="false" isInGroup="152">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="16" controlTypeID="com.balsamiq.mockups::Label" x="11" y="15" w="106" h="27" measuredW="107" measuredH="25" zOrder="2" locked="false" isInGroup="152">
+          <controlProperties>
+            <text>Login/CPF/CNPJ</text>
+          </controlProperties>
+        </control>
+        <control controlID="17" controlTypeID="com.balsamiq.mockups::Button" x="253" y="100" w="66" h="30" measuredW="43" measuredH="28" zOrder="3" locked="false" isInGroup="152">
+          <controlProperties>
+            <text>OK</text>
+          </controlProperties>
+        </control>
+        <control controlID="18" controlTypeID="com.balsamiq.mockups::TextInput" x="117" y="52" w="202" h="-1" measuredW="79" measuredH="29" zOrder="4" locked="false" isInGroup="152">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="19" controlTypeID="com.balsamiq.mockups::Label" x="12" y="50" w="43" h="27" measuredW="43" measuredH="25" zOrder="5" locked="false" isInGroup="152">
+          <controlProperties>
+            <text>Senha</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="154" controlTypeID="com.balsamiq.mockups::Link" x="694" y="521" w="-1" h="-1" measuredW="32" measuredH="25" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>links</text>
+      </controlProperties>
+    </control>
+    <control controlID="155" controlTypeID="com.balsamiq.mockups::Link" x="754" y="521" w="-1" h="-1" measuredW="32" measuredH="25" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>links</text>
+      </controlProperties>
+    </control>
+    <control controlID="156" controlTypeID="com.balsamiq.mockups::Link" x="814" y="521" w="-1" h="-1" measuredW="32" measuredH="25" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>links</text>
+      </controlProperties>
+    </control>
+    <control controlID="157" controlTypeID="com.balsamiq.mockups::Link" x="874" y="521" w="-1" h="-1" measuredW="32" measuredH="25" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>links</text>
+      </controlProperties>
+    </control>
+    <control controlID="158" controlTypeID="com.balsamiq.mockups::Link" x="934" y="521" w="-1" h="-1" measuredW="32" measuredH="25" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>links</text>
+      </controlProperties>
+    </control>
+    <control controlID="159" controlTypeID="com.balsamiq.mockups::Link" x="994" y="521" w="-1" h="-1" measuredW="32" measuredH="25" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>links</text>
+      </controlProperties>
+    </control>
+    <control controlID="160" controlTypeID="com.balsamiq.mockups::Image" x="343" y="105" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../Projetos/FNQ/Sistema%2520de%2520Gest%E3o/Inicia%E7%E3o/Wireframes/Seguranca/img_top_esq.jpg</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="161" controlTypeID="com.balsamiq.mockups::Link" x="506" y="380" w="-1" h="-1" measuredW="139" measuredH="25" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Esqueci%20minha%20Senha</text>
+      </controlProperties>
+    </control>
+    <control controlID="162" controlTypeID="com.balsamiq.mockups::Paragraph" x="662" y="245" w="456" h="270" measuredW="200" measuredH="140" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>A%20partir%20de%20agora%20voc%EA%20inicia%20o%20preenchimento%20do%20question%E1rio%20de%20autoavalia%E7%E3o%20da%20gest%E3o%20das%20micro%20e%20pequenas%20empresas.%20%0A%20%0AEsta%20ferramenta%20%E9%20indicada%20para%20empresas%20que%20buscam%20um%20panorama%20mais%20completo%20dos%20processos%20de%20gest%E3o%2C%20pois%20as%20permite%20conhecer%2C%20ao%20final%20da%20autoavalia%E7%E3o%2C%20seus%20pontos%20fortes%20e%20oportunidades%20de%20melhoria%2C%20al%E9m%20de%20apontar%20caminhos%20para%20melhorar%20continuamente.%20%0AA%20FNQ%20sugere%20que%2C%20para%20uma%20melhor%20compreens%E3o%20dos%20Fundamentos%20e%20Crit%E9rios%20de%20Excel%EAncia%2C%20as%20pessoas%20fa%E7am%20o%20curso%20virtual%20do%20Modelo%20de%20Excel%EAncia%20da%20Gest%E3o%2C%20dispon%EDvel%20no%20Portal%20www.fnq.org.br.%20%0AEste%20question%E1rio%20est%E1%20alinhado%20ao%20MPE%20Brasil%20%u2013%20Pr%EAmio%20de%20Competitividade%20para%20micro%20e%20pequenas%20empresas.%20Se%20voc%EA%20j%E1%20%E9%20ou%20j%E1%20foi%20candidato%20do%20pr%EAmio%2C%20seus%20dados%20s%E3o%20migrados%20automaticamente.%20%0APara%20iniciar%20a%20autoavalia%E7%E3o%20da%20gest%E3o%20das%20micro%20e%20pequenas%20empresas%20preencha%20o%20campo%20abaixo%20com%20seu%20CNPJ%20ou%20CPF.%20%0AAten%E7%E3o%3A%20S%F3%20podem%20utilizar%20o%20CPF%20os%20produtores%20rurais%20do%20Setor%20Agroneg%F3cio.%20%0ASe%20voc%EA%20precisar%20obter%20novamente%20sua%20senha%2C%20selecione%20a%20op%E7%E3o%20%22Esqueci%20minha%20senha%22.%20%20</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

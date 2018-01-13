@@ -1,0 +1,242 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using Sistema_de_Gestão_de_Treinamento.User_Control;
+using Vinit.SG.BLL;
+using Vinit.SG.Ent;
+using Vinit.SG.Common;
+
+namespace Sistema_de_Gestao.User_Controls
+{
+    public partial class UCGerenciarEtapaIA : UCBase
+    {
+        public delegate void AtualizaGrid();
+        public AtualizaGrid atualizaGrid { get; set; }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Show()
+        {
+            divUserControl.Visible = true;
+        }
+
+        private void Close()
+        {
+            divUserControl.Visible = false;
+        }
+
+        protected void ImgBttnCancelar_Click(object sender, ImageClickEventArgs e)
+        {
+            this.Clear();
+            this.Close();
+        }
+
+        protected void ImgBttnGravar_Click(object sender, ImageClickEventArgs e)
+        {
+            //this.Gravar();
+            this.Clear();
+            this.Close();
+
+            if (atualizaGrid != null)
+            {
+                this.atualizaGrid();
+            }
+        }
+
+        private void Clear()
+        {
+            ClearControl(this.PnlFundo.Controls);
+            this.HddnFldIdTurma.Value = "0";
+        }
+
+        public void Editar(int IdEstado, int nTipoEtapa)
+        {
+            this.Clear();
+            ListaGrid = new BllEtapa().ObterPorIdEstado(IdEstado, nTipoEtapa);
+            ObjectToPage();
+            this.Show();
+        }
+        /// <summary>
+        /// Utilizar este metodo para o FGA e o PEG
+        /// </summary>
+        /// <param name="IdTurma"></param>
+        public void Editar(int IdTurma)
+        {
+            this.Clear();
+            this.HddnFldIdTurma.Value = IdTurma.ToString();
+            ListaGrid = new BllEtapa().ObterPorTurma(IdTurma);
+            ObjectToPage();
+            this.Show();
+        }
+
+        private void ObjectToPage()
+        {
+            //this.HddnFldIdEtapa.Value = IntUtils.ToString(objEtapa.IdEtapa);
+            //List<EntEtapa> lstEtapa = new List<EntEtapa>();
+            //lstEtapa.Add(objEtapa);
+            this.grdEtapaEstadual.DataSource = ListaGrid;
+            this.grdEtapaEstadual.DataBind();
+        }
+
+        private void Gravar()
+        {
+            MessageBox(this.Page, "Etapa Alterada com sucesso!");
+        }
+
+        private void PageToObject(List<EntEtapa> lstEtapa)
+        {
+            foreach (GridViewRow row in this.grdEtapaEstadual.Rows)
+            {
+                EntEtapa objEtapa = new EntEtapa();
+                objEtapa.IdEtapa = StringUtils.ToInt(this.grdEtapaEstadual.DataKeys[row.RowIndex].Value.ToString());
+                Label lblAcaoAux = (Label)row.FindControl("LblAcao");
+                if (lblAcaoAux.Text == "True")
+                {
+                    objEtapa.Ativo = true;
+                }
+                else
+                {
+                    objEtapa.Ativo = false;
+                }
+                lstEtapa.Add(objEtapa);
+            }
+        }
+
+        protected void grdEtapaEstadual_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            Boolean PermissaoExcluir = ValidaPermissaoBotao(this.Page, EnumType.TipoAcao.Excluir);
+
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                ImageButton btnAcao = ((ImageButton)e.Row.FindControl("ImagBttnAcao"));
+
+                String imageUrl;
+                Label lblAcaoAux = (Label)e.Row.FindControl("LblAcao");
+
+                if (lblAcaoAux.Text == "True")
+                {
+                    imageUrl = "~/Image/_file_Ok2.png";
+                }
+                else
+                {
+                    imageUrl = "~/Image/file_delete2.png";
+                }
+
+                btnAcao.ImageUrl = imageUrl;
+                HabilitaDesabilitaBotao(btnAcao, PermissaoExcluir);
+            }
+        }
+
+        protected void grdEtapaEstadual_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            grdEtapaEstadual.PageIndex = e.NewPageIndex;
+            ObjectToPage();
+        }
+
+        protected void grdEtapaEstadual_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+            this.AlteraStatusItensGrid();
+            ImageButton btnAcao = ((ImageButton)grdEtapaEstadual.Rows[e.RowIndex].FindControl("ImagBttnAcao"));
+            String imageUrl;
+            Label lblAcaoAux = (Label)grdEtapaEstadual.Rows[e.RowIndex].FindControl("LblAcao");
+            Label lblIdEtapa = (Label)grdEtapaEstadual.Rows[e.RowIndex].FindControl("LblIdEtapa");
+
+            EntEtapa Etapa = new BllEtapa().ObterPorId(int.Parse(lblIdEtapa.Text));
+            Etapa.Ativo = !Etapa.Ativo;
+            EntEtapaResumo objEtapResumo = new EntEtapaResumo();
+            this.CriaResumo(objEtapResumo, Etapa);
+            try
+            {
+                new BllEtapa().AtivaDesativaEtapa(Etapa, objEtapResumo);
+            }
+            catch (Exception ex)
+            {
+                MessageBox(this.Page, "Erro ao tentar alterar Etapa!");
+            }
+
+            if (Etapa.Ativo)
+            {
+                imageUrl = "~/Image/_file_Ok2.png";
+                lblAcaoAux.Text = "True";
+            }
+            else
+            {
+                imageUrl = "~/Image/file_delete2.png";
+                lblAcaoAux.Text = "False";
+            }
+
+            btnAcao.ImageUrl = imageUrl;
+
+            ListaGrid = new BllEtapa().ObterPorTurma(Etapa.Turma.IdTurma);
+            ObjectToPage();
+        }
+
+        protected void grdEtapaEstadual_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "Resumo")
+            {
+                int RowIndex = ObjectUtils.ToInt(e.CommandArgument) - (grdEtapaEstadual.PageIndex * grdEtapaEstadual.PageSize);
+
+                Label LblIdEtapa = (Label)grdEtapaEstadual.Rows[RowIndex].FindControl("LblIdEtapa");
+                Int32 IdEtapa = int.Parse(LblIdEtapa.Text);
+                this.UCGerenciarEtapaResumo1.Visualizar(IdEtapa);
+            }
+        }
+
+        private void CriaResumo(EntEtapaResumo objEtapaResumo, List<EntEtapa> lstEtapa)
+        {
+            foreach (EntEtapa item in lstEtapa)
+            {
+                if (item.Ativo)
+                {
+                    objEtapaResumo.Acao = StringUtils.Concatenar(EnumType.Tabela.EntEtapa, EnumType.TipoAcao.Ativar);
+                    objEtapaResumo.AdmUsuario = UsuarioLogado;
+                    objEtapaResumo.DataCadastro = DateTime.Now;
+                    objEtapaResumo.Etapa = item;
+                }
+            }
+        }
+
+        private void CriaResumo(EntEtapaResumo objEtapaResumo, EntEtapa item)
+        {
+            objEtapaResumo.AdmUsuario = UsuarioLogado;
+            objEtapaResumo.DataCadastro = DateTime.Now;
+            objEtapaResumo.Etapa = item;
+            if (item.Ativo)
+            {
+                objEtapaResumo.Acao = StringUtils.Concatenar(EnumType.Tabela.EntEtapa, EnumType.TipoAcao.Ativar);
+            }
+            else
+            {
+                objEtapaResumo.Acao = StringUtils.Concatenar(EnumType.Tabela.EntEtapa, EnumType.TipoAcao.Inativar);
+            }
+        }
+
+        private void AlteraStatusItensGrid()
+        {
+            foreach (GridViewRow row in this.grdEtapaEstadual.Rows)
+            {
+                ImageButton btnAcao = ((ImageButton)row.FindControl("ImagBttnAcao"));
+                String imageUrl;
+                Label lblAcaoAux = (Label)row.FindControl("LblAcao");
+                if (lblAcaoAux.Text == "True")
+                {
+                    imageUrl = "~/Image/_file_Ok2.gif";
+                    lblAcaoAux.Text = "True";
+                }
+                else
+                {
+                    imageUrl = "~/Image/file_delete2.gif";
+                    lblAcaoAux.Text = "False";
+                }
+                btnAcao.ImageUrl = imageUrl;
+            }
+        }
+    }
+}

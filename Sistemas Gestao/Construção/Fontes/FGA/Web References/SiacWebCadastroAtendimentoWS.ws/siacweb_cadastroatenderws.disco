@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
-  <contractRef ref="http://ws.sebrae.com.br/siacwebportal/WebServices/siacweb_cadastroatenderws.asmx?wsdl" docRef="http://ws.sebrae.com.br/siacwebportal/WebServices/siacweb_cadastroatenderws.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
-  <soap address="http://ws.sebrae.com.br/siacwebportal/WebServices/siacweb_cadastroatenderws.asmx" xmlns:q1="CadastroAtender" binding="q1:SiacWEB_CadastroAtenderWSSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
-  <soap address="http://ws.sebrae.com.br/siacwebportal//WebServices/siacweb_cadastroatenderws.asmx" xmlns:q2="CadastroAtender" binding="q2:SiacWEB_CadastroAtenderWSSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
-</discovery>

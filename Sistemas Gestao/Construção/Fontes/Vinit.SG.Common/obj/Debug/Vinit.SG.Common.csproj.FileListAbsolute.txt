@@ -3,3 +3,8 @@ D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.Common\bin\Deb
 D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.Common\obj\Debug\ResolveAssemblyReference.cache
 D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.Common\obj\Debug\Vinit.SG.Common.dll
 D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.Common\obj\Debug\Vinit.SG.Common.pdb
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.Common\bin\Debug\Vinit.SG.Common.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.Common\bin\Debug\Vinit.SG.Common.pdb
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.Common\obj\Debug\Vinit.SG.Common.csprojResolveAssemblyReference.cache
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.Common\obj\Debug\Vinit.SG.Common.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.Common\obj\Debug\Vinit.SG.Common.pdb

@@ -28,3 +28,33 @@ D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\obj\D
 D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\obj\Debug\Sistema de Gestao.dll.licenses
 D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\obj\Debug\Sistema de Gestao.dll
 D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\obj\Debug\Sistema de Gestao.pdb
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\library\ABCpdf.DLL
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\library\ABCpdfCE6.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\library\ABCpdfCE7.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Sistema de Gestao.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Sistema de Gestao.pdb
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\ABCpdf.DLL
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\AjaxControlToolkit.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\BLL.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\DundasWebChart.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\FredCK.FCKeditorV2.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Ionic.Zip.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\log4net.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\System.Data.DataSetExtensions.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\System.Web.DataVisualization.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Vinit.SG.Common.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Vinit.SG.Ent.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Vinit.SG.DAL.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Microsoft.Practices.Unity.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Microsoft.Practices.Unity.Interception.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\BLL.pdb
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Vinit.SG.Common.pdb
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Vinit.SG.Ent.pdb
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\bin\Vinit.SG.DAL.pdb
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\obj\Debug\Sistema de Gestao.csprojResolveAssemblyReference.cache
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\obj\Debug\Sistema de Gestao.dll.licenses
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\obj\Debug\Sistema de Gestao.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Sistema de Gestao\obj\Debug\Sistema de Gestao.pdb

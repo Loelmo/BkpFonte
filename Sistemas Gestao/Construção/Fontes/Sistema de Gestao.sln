@@ -11,10 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vinit.SG.DAL", "Vinit.SG.DA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vinit.SG.Ent", "Vinit.SG.Ent\Vinit.SG.Ent.csproj", "{642FE992-4FFE-4489-BDEA-D6FF219C3BF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGA", "FGA\FGA.csproj", "{6819F8EF-A16C-4F50-AFB1-DA5771B73529}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PEG", "PEG\PEG.csproj", "{88778E03-2C78-4DB0-8CE7-CBF04FAEEF57}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,26 +71,6 @@ Global
 		{642FE992-4FFE-4489-BDEA-D6FF219C3BF5}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{642FE992-4FFE-4489-BDEA-D6FF219C3BF5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{642FE992-4FFE-4489-BDEA-D6FF219C3BF5}.Release|x86.ActiveCfg = Release|Any CPU
-		{6819F8EF-A16C-4F50-AFB1-DA5771B73529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6819F8EF-A16C-4F50-AFB1-DA5771B73529}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6819F8EF-A16C-4F50-AFB1-DA5771B73529}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{6819F8EF-A16C-4F50-AFB1-DA5771B73529}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{6819F8EF-A16C-4F50-AFB1-DA5771B73529}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{6819F8EF-A16C-4F50-AFB1-DA5771B73529}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6819F8EF-A16C-4F50-AFB1-DA5771B73529}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6819F8EF-A16C-4F50-AFB1-DA5771B73529}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{6819F8EF-A16C-4F50-AFB1-DA5771B73529}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{6819F8EF-A16C-4F50-AFB1-DA5771B73529}.Release|x86.ActiveCfg = Release|Any CPU
-		{88778E03-2C78-4DB0-8CE7-CBF04FAEEF57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{88778E03-2C78-4DB0-8CE7-CBF04FAEEF57}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{88778E03-2C78-4DB0-8CE7-CBF04FAEEF57}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{88778E03-2C78-4DB0-8CE7-CBF04FAEEF57}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{88778E03-2C78-4DB0-8CE7-CBF04FAEEF57}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{88778E03-2C78-4DB0-8CE7-CBF04FAEEF57}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{88778E03-2C78-4DB0-8CE7-CBF04FAEEF57}.Release|Any CPU.Build.0 = Release|Any CPU
-		{88778E03-2C78-4DB0-8CE7-CBF04FAEEF57}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{88778E03-2C78-4DB0-8CE7-CBF04FAEEF57}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{88778E03-2C78-4DB0-8CE7-CBF04FAEEF57}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

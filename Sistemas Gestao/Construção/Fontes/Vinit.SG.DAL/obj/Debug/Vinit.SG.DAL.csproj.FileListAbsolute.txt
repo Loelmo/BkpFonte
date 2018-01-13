@@ -12,3 +12,17 @@ D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.DAL\bin\Debug\
 D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.DAL\obj\Debug\ResolveAssemblyReference.cache
 D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.DAL\obj\Debug\Vinit.SG.DAL.dll
 D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.DAL\obj\Debug\Vinit.SG.DAL.pdb
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.DAL\bin\Debug\Vinit.SG.DAL.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.DAL\bin\Debug\Vinit.SG.DAL.pdb
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.DAL\bin\Debug\Vinit.SG.Common.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.DAL\bin\Debug\Vinit.SG.Ent.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.DAL\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.DAL\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.DAL\bin\Debug\Vinit.SG.Common.pdb
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.DAL\bin\Debug\Vinit.SG.Ent.pdb
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.DAL\obj\Debug\Vinit.SG.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.DAL\obj\Debug\Vinit.SG.DAL.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.DAL\obj\Debug\Vinit.SG.DAL.pdb

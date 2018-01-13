@@ -5,3 +5,10 @@ D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.Ent\bin\Debug\
 D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.Ent\obj\Debug\ResolveAssemblyReference.cache
 D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.Ent\obj\Debug\Vinit.SG.Ent.dll
 D:\Vinit\Project\FNQ\Sistemas Gestao\Construção\Fontes\Vinit.SG.Ent\obj\Debug\Vinit.SG.Ent.pdb
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.Ent\bin\Debug\Vinit.SG.Ent.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.Ent\bin\Debug\Vinit.SG.Ent.pdb
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.Ent\bin\Debug\Vinit.SG.Common.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.Ent\bin\Debug\Vinit.SG.Common.pdb
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.Ent\obj\Debug\Vinit.SG.Ent.csprojResolveAssemblyReference.cache
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.Ent\obj\Debug\Vinit.SG.Ent.dll
+C:\Users\Fernando\Documents\GitHub\BkpFonte\Sistemas Gestao\Construção\Fontes\Vinit.SG.Ent\obj\Debug\Vinit.SG.Ent.pdb
